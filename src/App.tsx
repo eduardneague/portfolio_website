@@ -1,13 +1,30 @@
 import  React  from 'react'
 
-const App: React.FC = (): JSX.Element => {
+import Home from '../pages/Home'
+import RootLayout from '../pages/RootLayout'
+import WentWrong from '../pages/WentWrong'
 
-  // app d d
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route
+} from 'react-router-dom'
+
+import './css_files/grid.css'
+
+const router = createBrowserRouter(createRoutesFromElements(
+  <Route path = "/" element = {<RootLayout/>} errorElement = {<WentWrong/>}>
+    <Route index element = {<Home/>}/>
+  </Route>
+));
+
+const App: React.FC = (): JSX.Element => {
 
   return (
     <>
       <div>
-        <h1 className = "text-orange-900 font-bold text-3xl font-[Poppins]">text</h1>
+        <RouterProvider router = {router}/>
       </div>
     </>
   )

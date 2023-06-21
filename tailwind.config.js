@@ -9,7 +9,21 @@ export default {
     "./pages/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'very-light-gray' : '#F9F9F9',
+        'light-gray' : '#5E5E5E',
+        'light-gray' : '#5E5E5E',
+        'spotify-green' : '#1ED760',
+        'linkedin-blue' : '#0274B3',
+        'linkedin-light-blue' : '#78CFFF',
+        'custom-pink' : '#D779AB',
+        'custom-pink' : '#D779AB',
+        'japanese-red' : '#FF5959',
+        'github-gray' : '#494949',
+        'github-gray' : '#494949',
+      }
+    },
   },
   plugins: [],
 }
