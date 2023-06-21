@@ -1,6 +1,7 @@
 import React from 'react'
 
 import CustomButton from '../components/CustomButton'
+import SmileyFace from '../components/SmileyFace'
 
 const AboutComponent: React.FC = (): JSX.Element => {
   return (
@@ -24,8 +25,8 @@ const AboutComponent: React.FC = (): JSX.Element => {
                 </span>
             </p>
             <div className = "w-full pl-5 h-20 flex justify-between items-center">
-                <CustomButton colors = {['black', 'custom-pink']} text = {'Contact'}/>
-                <div>caca</div>
+                <CustomButton colors = {['black', 'custom-pink']} text = {'Contact'} link = {'contact'} />
+                <SmileyFace/>
             </div>
         </div>
     </>

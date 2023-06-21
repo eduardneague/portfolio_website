@@ -1,0 +1,57 @@
+.buton-home {
+    position: absolute;
+    width: 85px;
+    height: 70%;
+    background: white;
+    border-radius: 30px;
+    margin-left: 10px;
+    transition: all .6s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
+    z-index: 1;
+}
+
+.buton-projects {
+    position: absolute;
+    width: 100px;
+    height: 70%;
+    background: white;
+    border-radius: 30px;
+    margin-left: 110px;
+    transition: all .6s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
+    z-index: 1;
+}
+
+.buton-contact {
+    position: absolute;
+    width: 90px;
+    height: 70%;
+    background: white;
+    border-radius: 30px;
+    margin-left: 223px;
+    transition: all .6s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.15);
+    z-index: 1;
+}
+
+.button-custom > * {
+    transition: all .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.button-custom {
+    transition: all .6s;
+    transition-timing-function: ease-in-out;
+}
+
+.button-custom:hover > .button-custom-arrow {
+    opacity: 1;
+    margin-left: 68%;
+}
+
+.button-custom:hover > .button-custom-text {
+    margin-right: 20px;
+}

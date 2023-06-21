@@ -13,6 +13,7 @@ import {
   Route
 } from 'react-router-dom'
 
+import './css_files/buttons.css'
 import './css_files/grid.css'
 
 const router = createBrowserRouter(createRoutesFromElements(
