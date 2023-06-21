@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'very-light-gray' : '#F9F9F9',
+        'very-light-gray' : '#F8F8F8',
         'light-gray' : '#5E5E5E',
         'light-gray' : '#5E5E5E',
         'spotify-green' : '#1ED760',

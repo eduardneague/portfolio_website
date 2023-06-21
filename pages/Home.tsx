@@ -1,10 +1,15 @@
 import React from 'react'
 import '../src/css_files/grid.css'
 
+import AboutComponent from '../components/AboutComponent'
+
 const Home: React.FC = (): JSX.Element => {
   return (
     <>
-        <div>hello there.</div>
+        <div className = "main-grid">
+          <AboutComponent/>    
+          <AboutComponent/>    
+        </div>
     </>
   )
 }
