@@ -11,7 +11,7 @@ const Home: React.FC = (): JSX.Element => {
         <div className = "main-grid">
           <AboutComponent/>   
           <Skills/> 
-          <Weather/> 
+          
         </div>
     </>
   )

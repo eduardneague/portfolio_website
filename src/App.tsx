@@ -29,7 +29,7 @@ const App: React.FC = (): JSX.Element => {
 
   return (
     <>
-      <div className = "h-screen w-full flex items-center flex-col">
+      <div className = "main-wrapper w-full flex items-center flex-col">
         <RouterProvider router = {router}/>
       </div>
     </>
