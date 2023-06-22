@@ -6,7 +6,7 @@ const Weather: React.FC = (): JSX.Element => {
     const [weatherConditions, setWeatherConditions] = useState<string | null>(null)
     const [currentTemperature, setCurrentTemperature] = useState<number | null>(null)
 
-    const apikey = import.meta.env.VITE_API_KEY
+    const apikey = '86SDWEZXMFK89QF887GU28YNN'
     const baseURL = import.meta.env.VITE_BASE_URL
 
      useEffect(() => {
