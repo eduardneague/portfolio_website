@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 
 const Weather: React.FC = (): JSX.Element => {
 
-    const [weatherIcon, setWeatherIcon] = useState<any>(null)
+    const [weatherIcon, setWeatherIcon] = useState<any>('clear-day')
     const [weatherConditions, setWeatherConditions] = useState<string | null>(null)
     const [currentTemperature, setCurrentTemperature] = useState<number | null>(null)
 
