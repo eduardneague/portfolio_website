@@ -20,6 +20,9 @@ export default {
         'custom-pink': '#D779AB',
         'japanese-red': '#FF5959',
         'github-gray': '#494949',
+        'meteo-light-blue': '#58E1FF',
+        'meteo-dark-blue': '#2A316F',
+        'meteo-orange': '#FFC700',
       }
     },
   },

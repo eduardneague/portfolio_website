@@ -1,0 +1,12 @@
+.skill-square > * {
+    transition: all .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.skill-square:hover .skill-square-name {
+    opacity: 1;
+}
+
+.skill-square:hover .skill-square-image {
+    opacity: 0.1;
+}

@@ -1,4 +1,5 @@
 import  React  from 'react'
+import '../src/css_files/App.css'
 
 import Home from '../pages/Home'
 import Projects from '../pages/Projects'
@@ -28,7 +29,7 @@ const App: React.FC = (): JSX.Element => {
 
   return (
     <>
-      <div className = "h-screen w-full flex items-center flex-col bg-very-light-gray">
+      <div className = "h-screen w-full flex items-center flex-col">
         <RouterProvider router = {router}/>
       </div>
     </>

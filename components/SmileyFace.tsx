@@ -31,7 +31,7 @@ const SmileyFace: React.FC = (): JSX.Element => {
       }, []);
 
     return (
-        <div className = "face mr-5">
+        <div className = "face mr-5 mb-2">
             <div className = "eyes">
                 <div 
                     className = "eye" 
