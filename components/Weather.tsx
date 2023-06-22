@@ -7,7 +7,7 @@ const Weather: React.FC = (): JSX.Element => {
     const [currentTemperature, setCurrentTemperature] = useState<number | null>(null)
 
     const apikey = '86SDWEZXMFK89QF887GU28YNN'
-    const baseURL = import.meta.env.VITE_BASE_URL
+    const baseURL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/'
 
      useEffect(() => {
 
