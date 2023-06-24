@@ -11,7 +11,7 @@ const JapaneseStats: React.FC = (): JSX.Element => {
                     <div className = "bg-japanese-red h-2 w-2 rounded-full"></div>
                 </div>
             </div>
-            <h2 className = "text-[#5E5E5E] text-[14px]">Japanese Stats (Yes, I love Japanese)</h2>
+            <h2 className = "text-[#5E5E5E] text-sm">Japanese Stats (Yes, I love Japanese)</h2>
         </div>
 
         <div className = "w-full h-3/4 flex flex-col gap-0 items-center justify-center">
@@ -19,7 +19,7 @@ const JapaneseStats: React.FC = (): JSX.Element => {
             <div className = "w-full h-[4rem] flex">
                 <div className = "w-1/2 h-full ml-10 flex flex-col gap-1">
                     <h1 className = "text-xl font-bold">読み能力</h1>
-                    <h2 className = "text-[#5E5E5E] text-[14px]">Reading Ability</h2>
+                    <h2 className = "text-[#5E5E5E] text-sm">Reading Ability</h2>
                 </div>
                 <div className = "w-1/2 h-full ml-10 flex gap-1 justify-end mr-10">
                     <h1 className = "text-xl text-japanese-red font-bold">60%</h1>
