@@ -30,7 +30,7 @@ const Weather: React.FC = (): JSX.Element => {
         <div className = "flex overflow-hidden flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue w-[22rem] rounded-3xl h-[10rem] ">
             <div className = "top-box w-full h-3/4 flex">
                 <div className = "left-box flex flex-col gap-2 justify-center ml-10 w-1/2">
-                    <h1 className = "text-xl font-bold text-white z-[1000]">
+                    <h1 className = "text-xl h-[20px] mb-2 font-bold text-white z-[1000]">
                         {
                             currentDay == 1 ? 'MONDAY' :
                             currentDay == 2 ? 'TUESADY' : 
@@ -41,7 +41,7 @@ const Weather: React.FC = (): JSX.Element => {
                             currentDay == 7 ? 'SUNDAY' : ''
                         }
                     </h1>
-                    <h1 className = "text-[40px] text-white">{currentDate}<span className = "text-xl ml-1 z-[1000]">
+                    <h1 className = "text-[40px] h-[40px] text-white">{currentDate}<span className = "text-xl ml-1 z-[1000]">
                     {
                             currentMonth == 0 ? 'Jan' :
                             currentMonth == 1 ? 'Feb' : 
@@ -60,8 +60,8 @@ const Weather: React.FC = (): JSX.Element => {
                 </div>
 
                 <div className = "relative right-box flex flex-col gap-2 justify-center mr-10 w-1/2 text-right">
-                    <h1 className = "text-xl font-bold text-white z-[1000]">{weatherConditions === 'Partially cloudy' ? 'Cloudy' : weatherConditions}</h1>
-                    <h1 className = "text-[40px] text-white mr-5 z-[1000]">{currentTemperature}<span className = "text-xl absolute right-0">℃</span></h1>
+                    <h1 className = "text-xl font-bold h-[20px] mb-2 text-white z-[1000]">{weatherConditions === 'Partially cloudy' ? 'Cloudy' : weatherConditions}</h1>
+                    <h1 className = "text-[40px] h-[40px] text-white mr-5 z-[1000]">{currentTemperature}<span className = "text-xl absolute right-0">℃</span></h1>
                 </div>
             </div>
 
