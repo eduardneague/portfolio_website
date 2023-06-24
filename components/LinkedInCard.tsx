@@ -7,7 +7,7 @@ import '../src/css_files/cardLogoAnimation.css'
 const LinkedInCard: React.FC = (): JSX.Element => {
   return (
     <Link 
-        to = 'https://github.com/eduardneague' 
+        to = 'https://www.linkedin.com/in/eduardneague/' 
         target = "_blank"
         className = "linkedin-card shadow-lg bg-linkedin-blue w-[22rem] h-[15rem] rounded-3xl flex justify-center items-center relative cursor-pointer"
     >
@@ -15,7 +15,7 @@ const LinkedInCard: React.FC = (): JSX.Element => {
         <CustomButton 
             colors = {['linkedin-blue', 'linkedin-light-blue']} 
             text = 'LinkedIn' 
-            link = 'https://github.com/eduardneague' 
+            link = 'https://www.linkedin.com/in/eduardneague/' 
             absolute = {[true, 78, 0, 0, 63]}
             newPage = {true}
             />
