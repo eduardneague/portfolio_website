@@ -12,11 +12,11 @@ const Weather: React.FC = (): JSX.Element => {
      useEffect(() => {
 
         const apiRequest = async () => {
-            const response = await fetch(`${baseURL}Bucharest?key=${apikey}`)
+            const response = await fetch(`${baseURL}Bucharest?unitGroup=metric&key=${apikey}`)
             const data = await response.json()
             setWeatherIcon(data.currentConditions.icon)
             setWeatherConditions(data.currentConditions.conditions)
-            setCurrentTemperature(Math.trunc((data.currentConditions.temp - 32) / 1.8))
+            setCurrentTemperature(Math.trunc(data.currentConditions.temp))
         }
         apiRequest()
      }, []) 
@@ -27,7 +27,7 @@ const Weather: React.FC = (): JSX.Element => {
     const currentDate: number = DATE.getDate()
 
     return (
-        <div className = "flex overflow-hidden flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue w-[22rem] rounded-2xl h-[10rem] ">
+        <div className = "flex overflow-hidden flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue w-[22rem] rounded-3xl h-[10rem] ">
             <div className = "top-box w-full h-3/4 flex">
                 <div className = "left-box flex flex-col gap-2 justify-center ml-10 w-1/2">
                     <h1 className = "text-xl font-bold text-white z-[1000]">

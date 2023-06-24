@@ -4,7 +4,7 @@ import SkillSquare from '../components/SkillSquare'
 const Skills: React.FC = (): JSX.Element => {
     return (
         <>
-            <div className = "skill-grid rounded-2xl bg-very-light-gray h-[28rem] w-[22rem] shadow-lg font-[Poppins] p-5">
+            <div className = "skill-grid rounded-3xl bg-very-light-gray h-[28rem] w-[22rem] shadow-lg font-[Poppins] p-5">
                 <SkillSquare name = "HTML5" image = "html_logo.png" size = {'4rem'}/>
                 <SkillSquare name = "CSS3" image = "css_logo.svg" size = {'3rem'}/>
                 <SkillSquare name = "Java Script" image = "javascript_logo.png" size = {'4rem'}/>

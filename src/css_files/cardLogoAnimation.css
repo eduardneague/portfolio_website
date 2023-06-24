@@ -1,0 +1,28 @@
+@keyframes logoAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25%{
+        transform: rotate(-30deg) scale(0.8);
+    }
+
+    50% {
+        transform: translateX(10%) rotate(30deg); 
+    }
+
+    75% {
+        transform: translateX(0%) rotate(0deg);
+    }
+    100% {
+        
+    }
+}
+
+.github-card:hover .animated-logo {
+    animation: logoAnimation 1000ms;
+}
+
+.linkedin-card:hover .animated-logo {
+    animation: logoAnimation 1000ms;
+}

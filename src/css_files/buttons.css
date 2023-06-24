@@ -55,3 +55,24 @@
 .button-custom:hover > .button-custom-text {
     margin-right: 20px;
 }
+
+/* github + linkedin card grandchildren hover animations */
+
+.github-card:hover > .parent-hover > .button-custom > .button-custom-text {
+    margin-right: 20px;
+}
+
+.github-card:hover > .parent-hover > .button-custom > .button-custom-arrow {
+    opacity: 1;
+    margin-left: 68%;
+}
+
+.linkedin-card:hover > .parent-hover > .button-custom > .button-custom-text {
+    margin-right: 20px;
+}
+
+.linkedin-card:hover > .parent-hover > .button-custom > .button-custom-arrow {
+    opacity: 1;
+    margin-left: 68%;
+}
+

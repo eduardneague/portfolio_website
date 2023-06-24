@@ -7,7 +7,7 @@ import SmileyFace from '../components/SmileyFace'
 const AboutComponent: React.FC = (): JSX.Element => {
   return (
     <>
-        <div className = "rounded-2xl bg-very-light-gray h-[21rem] w-[22rem] shadow-lg flex flex-col font-[Poppins]">
+        <div className = "rounded-3xl bg-very-light-gray h-[21rem] w-[22rem] shadow-lg flex flex-col font-[Poppins]">
             <h1 className = "text-xl font-bold ml-5 mt-5">Hello! I am</h1>    
             <h1
                 className="eduard-text ml-5 font-extrabold text-transparent text-[40px] bg-clip-text bg-gradient-to-r from-black to-custom-pink"
@@ -26,7 +26,13 @@ const AboutComponent: React.FC = (): JSX.Element => {
                 </span>
             </p>
             <div className = "w-full pl-5 h-20 flex justify-between items-center">
-                <CustomButton colors = {['black', 'custom-pink']} text = {'Contact'} link = {'contact'} />
+                <CustomButton 
+                    colors = {['black', 'custom-pink']} 
+                    text = {'Contact'} 
+                    link = {'contact'} 
+                    absolute = {[false, 0, 0, 0, 0]}
+                    newPage = {false}
+                    />
                 <SmileyFace/>
             </div>
         </div>

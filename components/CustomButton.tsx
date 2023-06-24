@@ -7,13 +7,23 @@ interface Props {
     colors: [string, string],
     text: string,
     link: string,
+    absolute: [boolean, number, number, number, number],
+    newPage: boolean
 }
 
-const CustomButton: React.FC<Props> = ({colors, text, link}): JSX.Element => {
+const CustomButton: React.FC<Props> = ({colors, text, link, absolute, newPage}): JSX.Element => {
+    const absoluteStyles = {
+        top: `${absolute[1]}%`,
+        right: `${absolute[2]}%`,
+        bottom: `${absolute[3]}%`,
+        left: `${absolute[4]}%`,
+    }
+
     return (
-        <div>
+        <div className = {absolute[0] === true ? `absolute parent-hover` : 'parent-hover'} style = {absoluteStyles}>
             <Link 
                 to = {link}
+                target = {newPage ? '_blank' : ''}
                 className = {`button-custom relative w-[7.5rem] text-white font-[Poppins] font-bold text-[14px] h-10 bg-gradient-to-r from-${colors[0]} to-${colors[1]} rounded-full flex justify-center items-center`}>
                     <h1 className = "button-custom-text">{text}</h1>
                     <div className = "button-custom-arrow rounded-full bg-white aspect-square w-[1.8rem] justify-center items-center bg-opacity-30 flex opacity-0 absolute">
