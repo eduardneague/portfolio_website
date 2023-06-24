@@ -2,7 +2,7 @@ import React from 'react'
 import {Outlet} from 'react-router-dom'
 
 import NavBar from '../components/NavBar'
-// d
+// dd
 const RootLayout: React.FC = (): JSX.Element => {
   return (
     <>
