@@ -18,7 +18,7 @@ const SkillSquare: React.FC<Props> = ({name, image, size}): JSX.Element => {
         <>
             <div className = {`select-none skill-square cursor-pointer relative flex justify-center items-center aspect-square w-16 rounded-md shadow-md`}>
                 <img src={image} alt="" className = {`skill-square-image aspect-square object-contain rounded-lg`} style = {imageStyle}/>
-                <h1 className = "skill-square-name font-bold absolute opacity-0 text-center">{name}</h1>
+                <h1 className = "skill-square-name font-bold absolute opacity-0 text-center text-sm">{name}</h1>
             </div>
         </>
 
