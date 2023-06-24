@@ -17,7 +17,7 @@ const AboutComponent: React.FC = (): JSX.Element => {
             <p className = "text-[14px] leading-6 ml-5 mt-3">I am a 
                 <span className="h-[2.6rem] font-extrabold text-transparent text-[14px] bg-clip-text bg-gradient-to-r from-black to-custom-pink"> Frontend Developer </span> 
                  and <span className="h-[2.6rem] font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-black to-custom-pink"> UX Designer </span>
-                 based in Bucharest, Romania. 
+                 based in Bucharest, Romania. <img src="romanian_flag.png" className = "romanian-flag  inline" alt="romanian_flag" />
                 <br/><br/>
                 <span> 
                     I love building apps for the web and
