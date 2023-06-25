@@ -25,7 +25,6 @@ const Weather: React.FC = (): JSX.Element => {
     const currentMonth: number = DATE.getMonth()
     const currentDay: number = DATE.getDay()
     const currentDate: number = DATE.getDate()
-    console.log(DATE)
 
     return (
         <div className = "flex overflow-hidden flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue w-[22rem] rounded-3xl h-[10rem] ">
