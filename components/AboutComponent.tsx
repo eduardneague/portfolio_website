@@ -8,7 +8,7 @@ const AboutComponent: React.FC = (): JSX.Element => {
   return (
     <>
         <div className = "rounded-3xl bg-very-light-gray h-[21rem] w-[22rem] shadow-lg flex flex-col font-[Poppins]">
-            <h1 className = "text-xl font-bold ml-5 mt-5">Hello! I am</h1>    
+            <h1 className = "text-xl font-bold ml-5 mt-5">Hello! I am</h1>
             <h1
                 className="eduard-text ml-5 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-black to-custom-pink"
             >

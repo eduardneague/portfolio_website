@@ -25,6 +25,7 @@ const Weather: React.FC = (): JSX.Element => {
     const currentMonth: number = DATE.getMonth()
     const currentDay: number = DATE.getDay()
     const currentDate: number = DATE.getDate()
+    console.log(DATE)
 
     return (
         <div className = "flex overflow-hidden flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue w-[22rem] rounded-3xl h-[10rem] ">
@@ -38,7 +39,7 @@ const Weather: React.FC = (): JSX.Element => {
                             currentDay == 4 ? 'THURSDAY' : 
                             currentDay == 5 ? 'FRIDAY' :
                             currentDay == 6 ? 'SATURDAY' : 
-                            currentDay == 7 ? 'SUNDAY' : ''
+                            currentDay == 0 ? 'SUNDAY' : ''
                         }
                     </h1>
                     <h1 className = "text-4xl text-white">{currentDate}<span className = "text-xl ml-1 z-[1000]">
