@@ -1,0 +1,88 @@
+.left-triangle {
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+    border-right: 10px solid black; 
+}
+
+.right-triangle {
+    width: 0; 
+    height: 0; 
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+    border-left: 10px solid black; 
+}
+
+.pause {
+    height: .7rem;
+    background: black;
+    width: .15rem;
+}
+
+.music-bar {
+    width: 7px;
+    height: 100%;
+    background-color: black;
+    border-radius: 3px;
+    animation: bounce 2.2s ease infinite alternate;
+    content: '';
+}
+
+.music-bar {
+    &:nth-of-type(2) {
+      animation-delay: -2.2s; /* Start at the end of animation */
+    }
+  
+    &:nth-of-type(3) {
+      animation-delay: -3.7s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(4) {
+        animation-delay: -4.3s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(5) {
+        animation-delay: -5.7s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(6) {
+        animation-delay: -6.4s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(7) {
+        animation-delay: -7.2s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(8) {
+        animation-delay: -8.2s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(9) {
+        animation-delay: -9.3s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(10) {
+        animation-delay: -10.1s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(11) {
+        animation-delay: -11.2s; /* Start mid-way of return of animation */
+    }
+  }
+
+@keyframes bounce {
+    10% {
+      transform: scaleY(0.3); /* start by scaling to 30% */
+    }
+  
+    30% {
+      transform: scaleY(1); /* scale up to 100% */
+    }
+  
+    60% {
+      transform: scaleY(0.5); /* scale down to 50% */
+    }
+  
+    80% {
+      transform: scaleY(0.75); /* scale up to 75% */
+    }
+  
+    100% {
+      transform: scaleY(0.6); /* scale down to 60% */
+    }
+  }
+  
+  

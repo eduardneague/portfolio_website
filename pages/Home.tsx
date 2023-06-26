@@ -7,6 +7,7 @@ import Weather from '../components/Weather'
 import GitHubCard from '../components/GitHubCard'
 import LinkedInCard from '../components/LinkedInCard'
 import JapaneseStats from '../components/JapaneseStats'
+import SpotifyCard from '../components/SpotifyCard'
 
 const Home: React.FC = (): JSX.Element => {
   return (
@@ -15,9 +16,10 @@ const Home: React.FC = (): JSX.Element => {
           <AboutComponent/>   
           <Skills/> 
           <Weather/> 
+          <JapaneseStats/> 
+          <SpotifyCard/> 
           <GitHubCard/> 
           <LinkedInCard/> 
-          <JapaneseStats/> 
         </div>
     </>
   )
