@@ -1,14 +1,102 @@
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    width: min(100%, 80rem);
+    width: min(95%, 70rem);
     justify-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-card {
+    grid-column: 1 / 2;
+}
+
+.skills-card {
+    grid-column: 1 / 2;
+}
+
+.weather-card {
+    grid-column: 1 / 2;
+}
+
+.japanese-card {
+    grid-column: 1 / 2;
+}
+
+.spotify-card {
+    grid-column: 1 / 2;
+}
+
+.github-card {
+    grid-column: 1 / 2;
+}
+
+.linkedin-card {
+    grid-column: 1 / 2;
 }
 
 .skill-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     justify-items: center;
 }
+
+ @media only screen and (min-width: 400px) {
+    .skill-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 600 px grid */
+
+@media only screen and (min-width: 600px) {
+    .main-grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .about-card {
+        grid-column: 1 / 7;
+    }
+
+    .skills-card {
+        grid-column: 1 / 7;
+        grid-row: 3 / 4;
+    }
+    
+    .weather-card {
+        grid-column: 1 / 7;
+        grid-row: 5 / 6;
+    }
+
+    .japanese-card {
+        grid-column: 1 / 5;
+        grid-row: 4 / 5;
+    }
+
+    .github-card {
+        grid-column: 5 / 7;
+        grid-row: 2 / 3;
+    }
+
+    .spotify-card {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+    }
+
+    .linkedin-card {
+        grid-column: 5 / 7;
+        grid-row: 4 / 5;
+    }
+
+
+    .skill-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+} 
+
+/* 700px grid */
+
+
+

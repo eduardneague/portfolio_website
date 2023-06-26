@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import '../src/css_files/grid.css'
 
 const Weather: React.FC = (): JSX.Element => {
 
@@ -27,7 +28,7 @@ const Weather: React.FC = (): JSX.Element => {
     const currentDate: number = DATE.getDate()
 
     return (
-        <div className = "flex overflow-hidden flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue w-[22rem] rounded-3xl h-[10rem] ">
+        <div className = "weather-card flex overflow-hidden w-full min-h-[10rem] h-full flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue rounded-3xl">
             <div className = "top-box w-full h-3/4 flex">
                 <div className = "left-box flex flex-col gap-2 justify-center ml-10 w-1/2">
                     <h1 className = "text-xl mb-2 font-bold text-white z-[1000]">

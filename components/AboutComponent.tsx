@@ -1,5 +1,6 @@
 import React from 'react'
 import '../src/css_files/App.css'
+import '../src/css_files/grid.css'
 
 import CustomButton from '../components/CustomButton'
 import SmileyFace from '../components/SmileyFace'
@@ -7,14 +8,14 @@ import SmileyFace from '../components/SmileyFace'
 const AboutComponent: React.FC = (): JSX.Element => {
   return (
     <>
-        <div className = "rounded-3xl bg-very-light-gray h-[21rem] w-[22rem] shadow-lg flex flex-col font-[Poppins]">
+        <div className = "about-card justify-center rounded-3xl bg-very-light-gray min-h-[21rem] h-full w-full shadow-lg flex flex-col font-[Poppins]">
             <h1 className = "text-xl font-bold ml-5 mt-5">Hello! I am</h1>
             <h1
                 className="eduard-text ml-5 font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-black to-custom-pink"
             >
             Eduard Neague
             </h1>
-            <p className = "text-sm leading-6 ml-5 mt-3">I am a 
+            <p className = "text-sm leading-6 ml-5 mt-3 max-w-[85%] ">I am a 
                 <span className="h-[2.6rem] font-extrabold text-transparent text-sm bg-clip-text bg-gradient-to-r from-black to-custom-pink"> Frontend Developer </span> 
                  and <span className="h-[2.6rem] font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-black to-custom-pink"> UX Designer </span>
                  based in Bucharest, <span className="h-[2.6rem] font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-700 via-yellow-500 to-red-700"> Romania! </span>

@@ -1,10 +1,12 @@
 import React from 'react'
 import SkillSquare from '../components/SkillSquare'
+import '../src/css_files/grid.css'
+
 
 const Skills: React.FC = (): JSX.Element => {
     return (
-        <>
-            <div className = "skill-grid rounded-3xl bg-very-light-gray h-[28rem] w-[22rem] shadow-lg font-[Poppins] p-5">
+        <div className = "skills-card flex justify-center items-center rounded-3xl bg-very-light-gray shadow-lg font-[Poppins] h-full w-full">
+            <div className = "skill-grid p-5">
                 <SkillSquare name = "HTML5" image = "html_logo.png" size = {'4rem'}/>
                 <SkillSquare name = "CSS3" image = "css_logo.svg" size = {'3rem'}/>
                 <SkillSquare name = "Java Script" image = "javascript_logo.png" size = {'4rem'}/>
@@ -18,7 +20,7 @@ const Skills: React.FC = (): JSX.Element => {
                 <SkillSquare name = "Adobe Ps" image = "ps_logo.png" size = {'4rem'}/>
                 <SkillSquare name = "Adobe Ai" image = "illustrator_logo.png" size = {'4rem'}/>
             </div>
-        </>
+        </div>
     )
 }
 
