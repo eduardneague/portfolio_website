@@ -44,7 +44,7 @@ const Weather: React.FC = (): JSX.Element => {
                     <h1 className = "text-xl mb-2 font-bold text-white z-[1000]">
                         {
                             currentDay == 1 ? 'MONDAY' :
-                            currentDay == 2 ? 'TUESADY' : 
+                            currentDay == 2 ? 'TUESDAY' : 
                             currentDay == 3 ? 'WEDNESDAY' :
                             currentDay == 4 ? 'THURSDAY' : 
                             currentDay == 5 ? 'FRIDAY' :
