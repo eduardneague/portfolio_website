@@ -1,26 +1,36 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState, useEffect} from 'react'
+
 import '../src/css_files/grid.css'
+
+export const weatherLoader = async () => {
+    const apikey = '86SDWEZXMFK89QF887GU28YNN'
+    const baseURL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/'
+  
+    const response = await fetch(`${baseURL}Bucharest?unitGroup=metric&key=${apikey}`)
+    return response.json()
+}
 
 const Weather: React.FC = (): JSX.Element => {
 
-    const [weatherIcon, setWeatherIcon] = useState<any>('clear-day')
+    const [weatherIcon, setWeatherIcon] = useState<string>('clear-day')
     const [weatherConditions, setWeatherConditions] = useState<string | null>(null)
     const [currentTemperature, setCurrentTemperature] = useState<number | null>(null)
 
-    const apikey = '86SDWEZXMFK89QF887GU28YNN'
-    const baseURL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/'
+    // FIX FUCKING RETARDED DEFFERING DATA THAT DOES NOT WANT TO DISPLAY MOTHERFUCKER (PROBABLY A SIMPLE FIX BUT I CANT FIX IT RN. GG)
 
-     useEffect(() => {
-
-        const apiRequest = async () => {
-            const response = await fetch(`${baseURL}Bucharest?unitGroup=metric&key=${apikey}`)
-            const data = await response.json()
+    useEffect(() => {
+        const stateValidation = async () => {
+            const data = await weatherLoader()
+            if(data.status === 'pending') {
+                setWeatherIcon('')
+                setWeatherConditions('...')
+            }
             setWeatherIcon(data.currentConditions.icon)
             setWeatherConditions(data.currentConditions.conditions)
             setCurrentTemperature(Math.trunc(data.currentConditions.temp))
         }
-        apiRequest()
-     }, []) 
+        stateValidation()
+    }, [])
 
     const DATE = new Date()
     const currentMonth: number = DATE.getMonth()
@@ -30,7 +40,7 @@ const Weather: React.FC = (): JSX.Element => {
     return (
         <div className = "weather-card flex overflow-hidden w-full min-h-[10rem] h-full flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue rounded-3xl">
             <div className = "top-box w-full h-3/4 flex">
-                <div className = "left-box flex flex-col gap-2 justify-center ml-10 w-1/2">
+                <div className = "left-box flex flex-col gap-2 justify-center weather-left-box w-1/2">
                     <h1 className = "text-xl mb-2 font-bold text-white z-[1000]">
                         {
                             currentDay == 1 ? 'MONDAY' :
@@ -60,15 +70,15 @@ const Weather: React.FC = (): JSX.Element => {
                     </span></h1>
                 </div>
 
-                <div className = "relative right-box flex flex-col gap-2 justify-center mr-10 w-1/2 text-right">
+                <div className = "relative right-box flex flex-col gap-2 justify-center weather-right-box w-1/2 text-right">
                     <h1 className = "text-xl font-bold mb-2 text-white z-[1000]">{weatherConditions === 'Partially cloudy' ? 'Cloudy' : weatherConditions}</h1>
                     <h1 className = "text-4xl text-white mr-5 z-[1000]">{currentTemperature}<span className = "text-xl absolute right-0">℃</span></h1>
                 </div>
             </div>
 
             <div className = "h-1/4 flex relative bottom-box rounded-br-2xl rounded-bl-2xl items-center justify-between select-none ">
-                <span className = "text-white text-md ml-10 mb-7 z-[1000]">Romania, Bucharest</span>
-                <img src={`${weatherIcon}.svg`} alt="weather_icon" className = "select-none z-[1] aspect-square object-contain h-[17rem] opacity-10 absolute bottom-[-200%] right-0"/>
+                <span className = "text-white text-md weather-left-box mb-7 z-[1000]">Romania, Bucharest</span>
+                <img src={`${weatherIcon}.svg`} draggable = "false" alt="weather_icon" className = "select-none z-[1] aspect-square object-contain h-[17rem] opacity-10 absolute bottom-[-200%] right-0"/>
             </div>
         </div>
     )

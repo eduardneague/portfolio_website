@@ -61,6 +61,15 @@
     &:nth-of-type(11) {
         animation-delay: -11.2s; /* Start mid-way of return of animation */
     }
+    &:nth-of-type(12) {
+      animation-delay: -12.2s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(13) {
+        animation-delay: -13.4s; /* Start mid-way of return of animation */
+    }
+    &:nth-of-type(14) {
+      animation-delay: -14.6s; /* Start mid-way of return of animation */
+    }
   }
 
 @keyframes bounce {

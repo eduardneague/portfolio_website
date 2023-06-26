@@ -11,7 +11,7 @@ const NavBar: React.FC = (): JSX.Element => {
                 <NavLink
                     to="/"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "z-[10] ml-2 rounded-full text-[14px] w-1/3 h-4/5 flex justify-center items-center" : "z-[10] rounded-full text-[14px] w-1/3 h-4/5 flex justify-center items-center ml-2 text-gray-600"
+                        isPending ? "z-[10] ml-2 rounded-full text-sm w-1/3 h-4/5 flex justify-center items-center" : isActive ? "z-[10] ml-2 rounded-full text-sm w-1/3 h-4/5 flex justify-center items-center" : "z-[10] rounded-full text-sm w-1/3 h-4/5 flex justify-center items-center ml-2 text-gray-600"
                     }
                     >
                     Home
@@ -19,7 +19,7 @@ const NavBar: React.FC = (): JSX.Element => {
                 <NavLink
                     to="projects"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "z-[10] rounded-full text-[14px] w-1/3 h-4/5 flex justify-center items-center" : "z-[10] rounded-full text-[14px] w-1/3 h-4/5 flex justify-center items-center text-gray-600"
+                        isPending ? "z-[10] ml-2 rounded-full text-sm w-1/3 h-4/5 flex justify-center items-center" : isActive ? "z-[10] rounded-full text-sm w-1/3 h-4/5 flex justify-center items-center" : "z-[10] rounded-full text-sm w-1/3 h-4/5 flex justify-center items-center text-gray-600"
                     }
                     >
                     Projects
@@ -27,7 +27,7 @@ const NavBar: React.FC = (): JSX.Element => {
                 <NavLink
                     to="contact"
                     className={({ isActive, isPending }) =>
-                        isPending ? "pending" : isActive ? "z-[10] mr-2 rounded-full text-[14px] w-1/3 h-4/5 flex justify-center items-center" : "z-[10] rounded-full text-[14px] w-1/3 h-4/5 flex justify-center items-center mr-2 text-gray-600"
+                        isPending ? "z-[10] ml-2 rounded-full text-sm w-1/3 h-4/5 flex justify-center items-center" : isActive ? "z-[10] mr-2 rounded-full text-sm w-1/3 h-4/5 flex justify-center items-center" : "z-[10] rounded-full text-sm w-1/3 h-4/5 flex justify-center items-center mr-2 text-gray-600"
                     }
                     >
                     Contact

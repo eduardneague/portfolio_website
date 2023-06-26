@@ -15,7 +15,7 @@ const AboutComponent: React.FC = (): JSX.Element => {
             >
             Eduard Neague
             </h1>
-            <p className = "text-sm leading-6 ml-5 mt-3 max-w-[85%] ">I am a 
+            <p className = "text-sm leading-6 ml-5 mt-3 max-w-[90%]">I am a 
                 <span className="h-[2.6rem] font-extrabold text-transparent text-sm bg-clip-text bg-gradient-to-r from-black to-custom-pink"> Frontend Developer </span> 
                  and <span className="h-[2.6rem] font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-black to-custom-pink"> UX Designer </span>
                  based in Bucharest, <span className="h-[2.6rem] font-extrabold text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-700 via-yellow-500 to-red-700"> Romania! </span>

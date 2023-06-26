@@ -6,6 +6,7 @@ import Projects from '../pages/Projects'
 import Contact from '../pages/Contact'
 import RootLayout from '../pages/RootLayout'
 import WentWrong from '../pages/WentWrong'
+import {weatherLoader} from '../components/Weather'
 
 import {
   createBrowserRouter,
@@ -19,7 +20,7 @@ import './css_files/grid.css'
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path = "/" element = {<RootLayout/>} errorElement = {<WentWrong/>}>
-    <Route index element = {<Home/>}/>
+    <Route index element = {<Home/>} loader = {weatherLoader} />
     <Route path = "projects" element = {<Projects/>}/>
     <Route path = "contact" element = {<Contact/>}/>
   </Route>
