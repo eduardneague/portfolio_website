@@ -19,7 +19,7 @@ const SwiperComponent = ({slides, startIndex}) => {
                 src = {slide.src} 
                 alt = {slide.alt}
                 index = {slide.index} 
-                className = "object-cover w-full h-full"
+                className = "object-cover w-full h-full select-none"
                 onClick = {(e) => e.stopPropagation()} 
                 />
         </SwiperSlide>
