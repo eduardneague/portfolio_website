@@ -1,6 +1,8 @@
 import  React  from 'react'
 import '../src/css_files/App.css'
 
+import Preloader from '../components/Preloader'
+
 import Home from '../pages/Home'
 import Projects from '../pages/Projects'
 import Contact from '../pages/Contact'
@@ -30,6 +32,7 @@ const App: React.FC = (): JSX.Element => {
 
   return (
     <>
+    <Preloader/>
       <div className = "main-wrapper flex flex-col items-center">
         <RouterProvider router = {router}/>
       </div>

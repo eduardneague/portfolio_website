@@ -20,6 +20,7 @@ const Weather: React.FC = (): JSX.Element => {
 
     useEffect(() => {
         const stateValidation = async () => {
+            // this is a problem, data deffers the way it should, but by the time the loader function finishes, this await still takes some time...
             const data = await weatherLoader()
             if(data.status === 'pending') {
                 setWeatherIcon('')
