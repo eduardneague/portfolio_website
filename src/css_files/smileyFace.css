@@ -59,3 +59,40 @@
     pointer-events: none;
     transition: 0.5s;
 }
+
+.chat-bubble {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    top: -50%;
+    right: 50%; 
+}
+
+.triangle-thing {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: -20%;
+    right: 0;
+    border-left: 8px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid white;
+}
+
+.face:hover .chat-bubble {
+    display: flex;
+}
+
+@media only screen and (min-width: 400px) {
+    .chat-bubble {
+        right: 0%;
+        left: 50%;
+    }
+    .triangle-thing {
+        right: 50%;
+        left: 0;
+    }
+}

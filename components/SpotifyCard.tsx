@@ -1,11 +1,16 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 import '../src/css_files/spotifyPlayer.css'
 import '../src/css_files/grid.css'
 
 const SpotifyCard: React.FC = (): JSX.Element => {
   return (
-    <div className = "spotify-card w-full h-full justify-center items-center shadow-lg bg-spotify-green rounded-3xl min-h-[15rem] flex overflow-hidden font-[Poppins]">
+    <motion.div
+    initial = {{opacity: 0, y: '300px'}}
+    animate = {{opacity: 1, y: 0}}
+    transition ={{delay: .25, duration: .5, ease: 'easeOut'}}
+    className = "spotify-card w-full h-full justify-center items-center shadow-lg bg-spotify-green rounded-3xl min-h-[15rem] flex overflow-hidden font-[Poppins]">
         <div className = "flex justify-center items-center gap-6 w-4/5 h-full">
             <div className = "left-box h-full mr-[0rem] flex justify-center items-center">
                 <img src="post_malone.jfif" alt="Post Malone Album Photo" draggable = "false" className = "spotify-photo rounded-3xl aspect-square select-none"/>
@@ -14,7 +19,7 @@ const SpotifyCard: React.FC = (): JSX.Element => {
             <div className = "right-box w-1/2 flex flex-col justify-center">
                 <div className = "flex gap-2">
                     <h1 className = "text-4xl font-bold">Circles</h1>
-                    <img src="spotify_logo_black.png" alt="Spotify Logo BLACK" className = "spotify-logo w-[2rem] h-[2rem] mt-1"/>
+                    <img src="spotify_logo_black.png" alt="Spotify Logo BLACK" draggable = "false" className = "spotify-logo w-[2rem] h-[2rem] mt-1"/>
                 </div>
                 <h2 className = "text-sm mb-2">Post Malone</h2>
 
@@ -53,7 +58,7 @@ const SpotifyCard: React.FC = (): JSX.Element => {
                 
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

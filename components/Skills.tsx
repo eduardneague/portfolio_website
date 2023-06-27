@@ -1,11 +1,17 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+
 import SkillSquare from '../components/SkillSquare'
 import '../src/css_files/grid.css'
 
 
 const Skills: React.FC = (): JSX.Element => {
     return (
-        <div className = "skills-card flex justify-center items-center rounded-3xl bg-very-light-gray shadow-lg font-[Poppins] h-full w-full">
+        <motion.div 
+        initial = {{opacity: 0, y: '-300px'}}
+        animate = {{opacity: 1, y: 0}}
+        transition ={{delay: .25, duration: .5, ease: 'easeOut'}}
+        className = "skills-card flex justify-center items-center rounded-3xl bg-very-light-gray shadow-lg font-[Poppins] h-full w-full">
             <div className = "skill-grid p-5">
                 <SkillSquare name = "HTML5" image = "html_logo.png" size = {'4rem'}/>
                 <SkillSquare name = "CSS3" image = "css_logo.svg" size = {'3rem'}/>
@@ -20,7 +26,7 @@ const Skills: React.FC = (): JSX.Element => {
                 <SkillSquare name = "Adobe Ps" image = "ps_logo.png" size = {'4rem'}/>
                 <SkillSquare name = "Adobe Ai" image = "illustrator_logo.png" size = {'4rem'}/>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

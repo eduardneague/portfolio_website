@@ -6,7 +6,7 @@ import Skills from '../components/Skills'
 import Weather from '../components/Weather'
 import GitHubCard from '../components/GitHubCard'
 import LinkedInCard from '../components/LinkedInCard'
-import JapaneseStats from '../components/JapaneseStats'
+import GalleryCard from '../components/GalleryCard'
 import SpotifyCard from '../components/SpotifyCard'
 
 const Home: React.FC = (): JSX.Element => {
@@ -16,7 +16,7 @@ const Home: React.FC = (): JSX.Element => {
           <AboutComponent/>   
           <Skills/> 
           <Weather/> 
-          <JapaneseStats/> 
+          <GalleryCard/> 
           <SpotifyCard/> 
           <GitHubCard/> 
           <LinkedInCard/> 

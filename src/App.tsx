@@ -8,36 +8,32 @@ import Projects from '../pages/Projects'
 import Contact from '../pages/Contact'
 import RootLayout from '../pages/RootLayout'
 import WentWrong from '../pages/WentWrong'
-import {weatherLoader} from '../components/Weather'
+
+// changed to classic Routes method because of Framer Motion (IMPORTANT!)
 
 import {
-  createBrowserRouter,
-  RouterProvider,
-  createRoutesFromElements,
-  Route
+  Route,
+  Routes,
 } from 'react-router-dom'
 
 import './css_files/buttons.css'
 import './css_files/grid.css'
 
-const router = createBrowserRouter(createRoutesFromElements(
-  <Route path = "/" element = {<RootLayout/>} errorElement = {<WentWrong/>}>
-    <Route index element = {<Home/>} loader = {weatherLoader} />
-    <Route path = "projects" element = {<Projects/>}/>
-    <Route path = "contact" element = {<Contact/>}/>
-  </Route>
-));
-
 const App: React.FC = (): JSX.Element => {
-
-  return (
-    <>
-    <Preloader/>
-      <div className = "main-wrapper flex flex-col items-center">
-        <RouterProvider router = {router}/>
-      </div>
-    </>
-  )
+    return (
+      <>
+      <Preloader/>  
+        <div className = "main-wrapper flex flex-col items-center">
+          <Routes>
+            <Route path = "/" element = {<RootLayout/>} errorElement = {<WentWrong/>}>
+              <Route index element = {<Home/>}/>
+              <Route path = "projects" element = {<Projects/>}/>
+              <Route path = "contact" element = {<Contact/>}/>
+            </Route>
+          </Routes>
+        </div>
+      </>
+    )
 }
 
 export default App

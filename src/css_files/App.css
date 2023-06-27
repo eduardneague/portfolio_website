@@ -35,3 +35,13 @@ html {
   ::-webkit-scrollbar-thumb:hover {
     background: #8f8f8f;
   }
+
+  ::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: black;
+  }
+  
+  ::selection {
+    color: white;
+    background: black;
+  }

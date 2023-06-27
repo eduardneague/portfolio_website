@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {motion} from 'framer-motion'
 
 import '../src/css_files/grid.css'
 
@@ -39,7 +40,11 @@ const Weather: React.FC = (): JSX.Element => {
     const currentDate: number = DATE.getDate()
 
     return (
-        <div className = "weather-card flex overflow-hidden w-full min-h-[10rem] h-full flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue rounded-3xl">
+        <motion.div 
+            initial = {{opacity: 0, x: '300px'}}
+            animate = {{opacity: 1, x: 0}}
+            transition ={{delay: .25, duration: .5, ease: 'easeOut'}}
+            className = "weather-card flex overflow-hidden w-full min-h-[10rem] h-full flex-col shadow-lg font-[Poppins] bg-gradient-to-b from-meteo-light-blue to-meteo-dark-blue rounded-3xl">
             <div className = "top-box w-full h-3/4 flex">
                 <div className = "left-box flex flex-col gap-2 justify-center weather-left-box w-1/2">
                     <h1 className = "text-xl mb-2 font-bold text-white z-[1000]">
@@ -81,7 +86,7 @@ const Weather: React.FC = (): JSX.Element => {
                 <span className = "text-white text-md weather-left-box mb-7 z-[1000]">Romania, Bucharest</span>
                 <img src={`${weatherIcon}.svg`} draggable = "false" alt="weather_icon" className = "select-none z-[1] aspect-square object-contain h-[17rem] opacity-10 absolute bottom-[-200%] right-0"/>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

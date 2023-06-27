@@ -31,7 +31,7 @@ const SmileyFace: React.FC = (): JSX.Element => {
       }, []);
 
     return (
-        <div className = "face mr-5 mb-2">
+        <div className = "face mr-5 mb-2 relative">
             <div className = "eyes">
                 <div 
                     className = "eye" 
@@ -47,6 +47,10 @@ const SmileyFace: React.FC = (): JSX.Element => {
                         transform: `rotate(${calculateAngle(eyeRight)}deg)`,
                       }}
                     ></div>
+            </div>
+            <div className = "chat-bubble justify-center items-center font-[Poppins] font-bold text-sm shadow-lg">
+                <div className = "triangle-thing shadow-lg"></div>
+                <h1>Oh, hi there!</h1>
             </div>
         </div>
     )
