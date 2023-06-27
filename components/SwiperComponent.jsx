@@ -30,7 +30,7 @@ const SwiperComponent = ({slides, startIndex}) => {
         <div onClick = {(e) => e.stopPropagation()} >
         <Swiper
             initialSlide = {startIndex}
-            autoplay = {true}
+            autoplay = {{delay: 7000}}
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             slidesPerView={1}
             navigation 
