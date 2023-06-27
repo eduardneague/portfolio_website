@@ -19,7 +19,7 @@ const SpotifyCard: React.FC = (): JSX.Element => {
             <div className = "right-box w-1/2 flex flex-col justify-center">
                 <div className = "flex gap-2">
                     <h1 className = "text-4xl font-bold">Circles</h1>
-                    <img src="spotify_logo_black.png" alt="Spotify Logo BLACK" draggable = "false" className = "spotify-logo w-[2rem] h-[2rem] mt-1"/>
+                    <img src="spotify_logo_black.png" alt="Spotify Logo BLACK" draggable = "false" className = "spotify-logo select-none w-[2rem] h-[2rem] mt-1"/>
                 </div>
                 <h2 className = "text-sm mb-2">Post Malone</h2>
 
