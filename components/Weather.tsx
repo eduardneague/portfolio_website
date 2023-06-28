@@ -77,7 +77,12 @@ const Weather: React.FC = (): JSX.Element => {
                 </div>
 
                 <div className = "relative right-box flex flex-col gap-2 justify-center weather-right-box w-1/2 text-right">
-                    <h1 className = "text-xl font-bold mb-2 text-white z-[1000]">{weatherConditions === 'Partially cloudy' ? 'Cloudy' : weatherConditions}</h1>
+                    <h1 className = "text-xl font-bold mb-2 text-white z-[1000]">
+                        {
+                            weatherConditions === 'Partially cloudy' ? 'Cloudy' : 
+                            weatherConditions === 'Overcast' ? 'Cast' : ''
+                        }
+                        </h1>
                     <h1 className = "text-4xl text-white mr-5 z-[1000]">{currentTemperature}<span className = "text-xl absolute right-0">℃</span></h1>
                 </div>
             </div>
