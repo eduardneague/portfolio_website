@@ -41,6 +41,8 @@ const AboutComponent: React.FC = (): JSX.Element => {
                             link = {'contact'} 
                             absolute = {[false, 0, 0, 0, 0]}
                             newPage = {false}
+                            size = {['7.5rem', '2.5rem']}
+                            arrowSize = {['1.8rem', '0']}
                             />
                         <SmileyFace/>
                     </div>

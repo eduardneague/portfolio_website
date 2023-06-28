@@ -23,6 +23,10 @@
     animation: logoAnimation 1000ms;
 }
 
+.project-github-card:hover .animated-logo {
+    animation: logoAnimation 1000ms;
+}
+
 .linkedin-card:hover .animated-logo {
     animation: logoAnimation 1000ms;
 }

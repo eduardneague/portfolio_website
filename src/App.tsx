@@ -22,7 +22,7 @@ import './css_files/grid.css'
 const App: React.FC = (): JSX.Element => {
     return (
       <>
-      <Preloader/>  
+      {/* <Preloader/>  turn back on  */}
         <div className = "main-wrapper flex flex-col items-center">
           <Routes>
             <Route path = "/" element = {<RootLayout/>} errorElement = {<WentWrong/>}>

@@ -28,6 +28,12 @@ export default {
         'meteo-light-blue': '#58E1FF',
         'meteo-dark-blue': '#2A316F',
         'meteo-orange': '#FFC700',
+        'scrimba-dark-purple': '#2A2537',
+        'scrimba-light-purple': '#C7B9FF',
+        'codecademy-dark-blue': '#101630',
+        'codecademy-light-blue': '#2D4B85',
+        'google-red': '#EA4235',
+        'google-blue': '#4286F5'
       }
     },
   },
