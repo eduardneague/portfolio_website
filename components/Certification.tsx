@@ -19,7 +19,7 @@ const Certification: React.FC<Props> = ({title, image, issueDate, buttonColors, 
         transition ={{delay: Math.random() * .30, duration: .5, ease: 'easeOut'}}
         className = "w-full h-full max-w-[17rem] flex flex-col">
         <div className = "top-certification-container flex w-full">
-            <div className = "max-w-[6rem] flex justify-center items-center overflow-hidden">
+            <div className = "max-w-[5rem] flex justify-center items-center overflow-hidden">
                  <img 
                     src = {image} 
                     alt = {issueCorp}

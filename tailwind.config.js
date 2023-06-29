@@ -33,7 +33,8 @@ export default {
         'codecademy-dark-blue': '#101630',
         'codecademy-light-blue': '#2D4B85',
         'google-red': '#EA4235',
-        'google-blue': '#4286F5'
+        'google-blue': '#4286F5',
+        'contact-pink': '#D779AB'
       }
     },
   },

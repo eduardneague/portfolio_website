@@ -3,13 +3,13 @@ import '../src/css_files/App.css'
 
 import Preloader from '../components/Preloader'
 
-import Home from '../pages/Home'
+import Home, {homeWeatherLoader} from '../pages/Home'
 import Projects from '../pages/Projects'
 import Contact from '../pages/Contact'
 import RootLayout from '../pages/RootLayout'
 import WentWrong from '../pages/WentWrong'
-
-// changed to classic Routes method because of Framer Motion (IMPORTANT!)
+import ContactSuccess from '../pages/ContactSuccess'
+import ContactFail from '../pages/ContactFail'
 
 import {
   Route,
@@ -26,10 +26,14 @@ const App: React.FC = (): JSX.Element => {
         <div className = "main-wrapper flex flex-col items-center">
           <Routes>
             <Route path = "/" element = {<RootLayout/>} errorElement = {<WentWrong/>}>
-              <Route index element = {<Home/>}/>
+              <Route index element = {<Home/>} loader = {homeWeatherLoader}/>
               <Route path = "projects" element = {<Projects/>}/>
               <Route path = "contact" element = {<Contact/>}/>
             </Route>
+
+            <Route path = '/contact/success' element = {<ContactSuccess/>} errorElement = {<WentWrong/>}/>
+            <Route path = '/contact/fail' element = {<ContactFail/>} errorElement = {<WentWrong/>}/>
+          
           </Routes>
         </div>
       </>

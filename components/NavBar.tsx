@@ -6,7 +6,7 @@ const NavBar: React.FC = (): JSX.Element => {
     const location = useLocation()
 
     return (
-        <div>
+      <div>
             <div className = "NAVBAR select-none relative gap-5 h-10 w-80 my-10 text-black bg-very-light-gray shadow-md rounded-full flex justify-between font-[Poppins] items-center">
                 <NavLink
                     to="/"
