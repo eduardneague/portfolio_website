@@ -6,7 +6,7 @@ import '../src/css_files/grid.css'
 export const weatherLoader = async () => {
     const apikey = '86SDWEZXMFK89QF887GU28YNN'
     const baseURL = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/'
-  
+ 
     const response = await fetch(`${baseURL}Bucharest?unitGroup=metric&key=${apikey}`)
     return response.json()
 }

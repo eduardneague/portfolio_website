@@ -1,4 +1,4 @@
-import  React  from 'react'
+import React from 'react'
 import '../src/css_files/App.css'
 
 import Preloader from '../components/Preloader'
