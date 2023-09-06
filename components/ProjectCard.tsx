@@ -19,7 +19,6 @@ interface Props {
 }
 
 const ProjectCard: React.FC<Props> = ({title, description, buttonText, tech, link, projectNumber}): JSX.Element => {
-
     const techDisplay = tech.map((element) => {
         const sizeStyle = {
             width: element.size,

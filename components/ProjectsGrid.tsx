@@ -14,14 +14,14 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
               lorem ipsum lorem ipsum lorem ipsum lorem 
               (this description is only on hover)
             `}
-            link = 'http://'
+            link = 'amber'
             buttonText = 'Project 1'
             tech = {[
-              {name: 'React', image: 'react_logo.png', size: '1.6rem'},
-              {name: 'Tailwind', image: 'tailwind_logo.png', size: '1.6rem'},
-              {name: 'Redux', image: 'redux_logo.png', size: '1.6rem'},
-              {name: 'Figma', image: 'figma_logo.png', size: '1.6rem'},
-              {name: 'TypeScript', image: 'typescript_logo.png', size: '1.6rem'}, 
+              {name: 'React', image: '/react_logo.png', size: '1.6rem'},
+              {name: 'Tailwind', image: '/tailwind_logo.png', size: '1.6rem'},
+              {name: 'Redux', image: '/redux_logo.png', size: '1.6rem'},
+              {name: 'Figma', image: '/figma_logo.png', size: '1.6rem'},
+              {name: 'TypeScript', image: '/typescript_logo.png', size: '1.6rem'}, 
             ]}
         />
         <ProjectCard
@@ -33,14 +33,14 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
               lorem ipsum lorem ipsum lorem ipsum lorem 
               (this description is only on hover)
             `}
-            link = 'http://'
+            link = 'runwild'
             buttonText = 'Project 2'
             tech = {[
-              {name: 'React', image: 'react_logo.png', size: '1.6rem'},
-              {name: 'Tailwind', image: 'tailwind_logo.png', size: '1.6rem'},
-              {name: 'Redux', image: 'redux_logo.png', size: '1.6rem'},
-              {name: 'Figma', image: 'figma_logo.png', size: '1.6rem'},
-              {name: 'TypeScript', image: 'typescript_logo.png', size: '1.6rem'}, 
+              {name: 'React', image: '/react_logo.png', size: '1.6rem'},
+              {name: 'Tailwind', image: '/tailwind_logo.png', size: '1.6rem'},
+              {name: 'Redux', image: '/redux_logo.png', size: '1.6rem'},
+              {name: 'Figma', image: '/figma_logo.png', size: '1.6rem'},
+              {name: 'TypeScript', image: '/typescript_logo.png', size: '1.6rem'}, 
             ]}
         />
         <ProjectCard
@@ -52,14 +52,14 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
               lorem ipsum lorem ipsum lorem ipsum lorem 
               (this description is only on hover)
             `}
-            link = 'http://'
+            link = 'diskus'
             buttonText = 'Project 3'
             tech = {[
-              {name: 'React', image: 'react_logo.png', size: '1.6rem'},
-              {name: 'Tailwind', image: 'tailwind_logo.png', size: '1.6rem'},
-              {name: 'Redux', image: 'redux_logo.png', size: '1.6rem'},
-              {name: 'Figma', image: 'figma_logo.png', size: '1.6rem'},
-              {name: 'TypeScript', image: 'typescript_logo.png', size: '1.6rem'}, 
+              {name: 'React', image: '/react_logo.png', size: '1.6rem'},
+              {name: 'Tailwind', image: '/tailwind_logo.png', size: '1.6rem'},
+              {name: 'Redux', image: '/redux_logo.png', size: '1.6rem'},
+              {name: 'Figma', image: '/figma_logo.png', size: '1.6rem'},
+              {name: 'TypeScript', image: '/typescript_logo.png', size: '1.6rem'}, 
             ]}
         />
         <ProjectCard
@@ -71,14 +71,14 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
               lorem ipsum lorem ipsum lorem ipsum lorem 
               (this description is only on hover)
             `}
-            link = 'http://'
+            link = 'showcar'
             buttonText = 'Project 4'
             tech = {[
-              {name: 'React', image: 'react_logo.png', size: '1.6rem'},
-              {name: 'Tailwind', image: 'tailwind_logo.png', size: '1.6rem'},
-              {name: 'Redux', image: 'redux_logo.png', size: '1.6rem'},
-              {name: 'Figma', image: 'figma_logo.png', size: '1.6rem'},
-              {name: 'TypeScript', image: 'typescript_logo.png', size: '1.6rem'}, 
+              {name: 'React', image: '/react_logo.png', size: '1.6rem'},
+              {name: 'Tailwind', image: '/tailwind_logo.png', size: '1.6rem'},
+              {name: 'Redux', image: '/redux_logo.png', size: '1.6rem'},
+              {name: 'Figma', image: '/figma_logo.png', size: '1.6rem'},
+              {name: 'TypeScript', image: '/typescript_logo.png', size: '1.6rem'}, 
             ]}
         />
     </>

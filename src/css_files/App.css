@@ -17,8 +17,8 @@ html {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
+    width: 0px;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -40,6 +40,7 @@ input[type=number] {
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: rgb(131, 131, 131);
+    background-clip: content-box;
     border-radius: 3rem;
   }
   

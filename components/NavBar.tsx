@@ -36,6 +36,14 @@ const NavBar: React.FC = (): JSX.Element => {
                         <div className = "buton-home"></div>
                     ) : location.pathname === '/projects' ? (
                         <div className = 'buton-projects'></div>
+                    ) : location.pathname === '/projects/amber' ? (
+                        <div className = 'buton-projects'></div>
+                    ): location.pathname === '/projects/diskus' ? (
+                        <div className = 'buton-projects'></div>
+                    ): location.pathname === '/projects/runwild' ? (
+                        <div className = 'buton-projects'></div>
+                    ): location.pathname === '/projects/showcar' ? (
+                        <div className = 'buton-projects'></div>
                     ) : location.pathname === '/contact' ? (
                         <div className = 'buton-contact'></div>
                     ) : ''

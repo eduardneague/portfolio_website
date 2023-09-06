@@ -39,6 +39,7 @@ const CustomButton: React.FC<Props> = ({colors, text, link, absolute, newPage, s
             <div className = "absolute opacity-0 from-codecademy-dark-blue to-codecademy-light-blue"></div>
             <div className = "absolute opacity-0 from-google-red to-google-blue"></div>
             <div className = "absolute opacity-0 from-linkedin-blue to-linkedin-light-blue"></div>
+            <div className = "absolute opacity-0 from-orange-500 to-orange-800"></div>
 
             <div style = {buttonWidth}>
                 <Link 
@@ -49,7 +50,7 @@ const CustomButton: React.FC<Props> = ({colors, text, link, absolute, newPage, s
                         <div 
                             style = {arrowWidth}
                             className = "button-custom-arrow rounded-full bg-white aspect-square w-full justify-center items-center bg-opacity-30 flex opacity-0 absolute">
-                            <img src="button_arrow.png" alt="button_arrow" className = "object-cover aspect-square w-[.6rem]"/>
+                            <img src="/button_arrow.png" alt="button_arrow" className = "object-cover aspect-square w-[.6rem]"/>
                         </div>
                 </Link>
             </div>

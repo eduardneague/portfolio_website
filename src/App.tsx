@@ -10,6 +10,7 @@ import RootLayout from '../pages/RootLayout'
 import WentWrong from '../pages/WentWrong'
 import ContactSuccess from '../pages/ContactSuccess'
 import ContactFail from '../pages/ContactFail'
+import ProjectPage from '../pages/ProjectPage'
 
 import {
   Route,
@@ -27,7 +28,10 @@ const App: React.FC = (): JSX.Element => {
           <Routes>
             <Route path = "/" element = {<RootLayout/>} errorElement = {<WentWrong/>}>
               <Route index element = {<Home/>} loader = {homeWeatherLoader}/>
-              <Route path = "projects" element = {<Projects/>}/>
+              <Route path = "projects">
+                <Route index element = {<Projects/>}/>
+                <Route path = ":projectId" element = {<ProjectPage/>}/>
+              </Route>
               <Route path = "contact" element = {<Contact/>}/>
             </Route>
 
