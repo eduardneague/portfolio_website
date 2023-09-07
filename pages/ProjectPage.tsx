@@ -36,6 +36,16 @@ const ProjectPage: React.FC = (): JSX.Element => {
         }
     ]
     let userflowImage: string = ''
+    let visualDesign: {
+        name: string;
+        image: string;
+    }[] = []
+    let functionality: {
+        title: string;
+        image: string;
+    }[] = []
+    let linkBackground: string = ''
+    let githubLink: string = ''
 
     // Amber Project
 
@@ -45,64 +55,112 @@ const ProjectPage: React.FC = (): JSX.Element => {
         buttonColors = ['orange-500', 'orange-800']
         mainBackground = "/amber/amber_background.png"
         siteLink = "https://amber-movie-project.web.app/"
-        description = "An app that helps you quickly access and auction art pieces anywhere you want. It has a qr code scanner that allows users scan artwork while being near it in the art gallery."
-        role = ['Front End Developer', 'Back End Developer', 'UX/UI Designer', 'Researcher']
+        description = "An app that helps you find any movie at absolutely any time, fast, cheap and efficient. Perfect for anyone looking for a premium service at a low cost."
+        role = ['Front End Developer', 'UX/UI Designer', 'Researcher']
         duration = ['1 Month', 'March 2023 - April 2023']
-        problems = "Similar art auction apps are too cluttered and waste users' time. Information about art and the artist is lacking."
-        goal = "Make art auctioning accesible and a more enjoyable experience for users."
+        problems = "Similar movie finding and streaming service applications are not accessible."
+        goal = "Create a movie platform that gives users a very premium service at a very low cost."
         tech = [
             {name: 'React', image: '/react_logo.png', size: '2rem'},
             {name: 'Tailwind', image: '/tailwind_logo.png', size: '2rem'},
             {name: 'Redux', image: '/redux_logo.png', size: '2rem'},
             {name: 'Figma', image: '/figma_logo.png', size: '2rem'},
             {name: 'TypeScript', image: '/typescript_logo.png', size: '2rem'}, 
+            {name: 'Firebase', image: '/firebase_logo.png', size: '2rem'}, 
+            {name: 'React Router', image: '/reactrouter_logo.png', size: '2rem'}, 
+            {name: 'Stripe', image: '/stripe_logo.png', size: '2rem'}, 
         ]
         persona = {
             name: 'Bilu Adrian',
-            profession: 'Data Scientist',
-            details: ['Age 36', 'Male', 'Philadelphia', 'Tech Savy', 'Single'],
-            goals: ['Obtain brilliant artwork for his home decor.', 'Obtain brilliant artwork for him home decor.'],
-            bio: 'Kevin is a data scientist working at a big corporation. He is a busy working man that generally works every day even on weekends.',
-            frustrations: 'Kevin is a data scientist working at a big corporation. He is a busy working man that generally works every day even on weekends. He wants to spend more of his time on his personal life and hobbies.',
+            profession: 'APP DEVELOPER',
+            details: ['Age 25', 'Male', 'Bucharest', 'Tech Savy', 'Married'],
+            goals: ['Find movies fast and easy.', 'Wants a premium service that is not too expensive.'],
+            bio: 'Adrian is an application developer working for a very big tech company. He loves watching movies and dramas with his family.',
+            frustrations: 'He wishes premium movie streaming services would not be so expensive for what they can offer.',
             image: '/amber/amber_persona.png'
         }
         empathyMap = [
             {
                 title: 'says',
                 details: [
-                    'Wants easy navigation', 
-                    'Looks for a more enjoyable experience',
-                    'Passionate about art culture',
-                    'Uses the phone a lot'
+                    'Wants easy navigation.', 
+                    'Looks for a more enjoyable experience.',
+                    'Passionate about movie culture.',
+                    'Uses the phone a lot.'
                 ]
             },
             {
                 title: 'thinks',
                 details: [
-                    'Will waste time looking for artwork', 
-                    'This could save money',
-                    'How long will this take?',
-                    'Should I get more?'
+                    'This could save money.',
+                    'How long am I going to use it for?',
+                    'Should I get a subscription?'
                 ]
             },
             {
                 title: 'does',
                 details: [
-                    'Checks phone everyday for something new', 
-                    'Looks for similar art on other platforms',
-                    'Explore artists',
+                    'Checks phone everyday for something new.', 
+                    'Looks for similar prices on other platforms.',
+                    'Explores movies.',
                 ]
             },
             {
                 title: 'feels',
                 details: [
-                    'Excited for something new', 
-                    'A bit impatient',
-                    'Scared to lose the bid',
+                    'Excited for something new.', 
+                    'Very impatient.',
+                    'Scared to buy something that he may not like.',
                 ]
             }
         ]
         userflowImage = "/amber/amber_userflow.png"
+        visualDesign = [
+            {
+                name: 'amber_design_1',
+                image: '/amber/amber_design_1.png'
+            },
+            {
+                name: 'amber_design_2',
+                image: '/amber/amber_design_2.png'
+            },
+            {
+                name: 'amber_design_3',
+                image: '/amber/amber_design_3.png'
+            },
+            {
+                name: 'amber_design_4',
+                image: '/amber/amber_design_4.png'
+            },
+        ]
+        functionality = [
+            {
+                title: 'Full user authentification with Firebase 9',
+                image: '/amber/amber_functionality_1.png'
+            },
+            {
+                title: 'User profile and working subscription service',
+                image: '/amber/amber_functionality_2.png'
+            },
+            {
+                title: 'Subscription checkout service with Stripe',
+                image: '/amber/amber_functionality_3.png'
+            },
+            {
+                title: 'TMDB API used for constantly fetching latest movies',
+                image: '/amber/amber_functionality_4.png'
+            },
+            {
+                title: 'Playable trailer functionality',
+                image: '/amber/amber_functionality_5.png'
+            },
+            {
+                title: 'Fully functional search bar',
+                image: '/amber/amber_functionality_6.png'
+            },
+        ]
+        linkBackground = 'bg-orange-500'
+        githubLink = "https://github.com/eduardneague/amber"
     } 
 
     return (
@@ -124,6 +182,10 @@ const ProjectPage: React.FC = (): JSX.Element => {
                     persona = {persona}
                     empathyMap = {empathyMap}
                     userflowImage = {userflowImage}
+                    visualDesign = {visualDesign}
+                    functionality = {functionality}
+                    linkBackground= {linkBackground}
+                    githubLink = {githubLink}
                 />
             </div>
         </>

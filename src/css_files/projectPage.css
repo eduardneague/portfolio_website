@@ -44,4 +44,34 @@
 	}
 }
 
+.project-card:hover .project-description-box {
+	display: block !important; 
+	opacity: 1 !important; 
+}
 
+.project-card:hover .black-overlay {
+	height: 100% !important;
+}
+
+.project-description-box {
+	transition: all;
+	transition-duration: 200ms;
+	transition-duration: ease-out;
+	transition-delay: 50ms;
+}
+
+.black-overlay {
+	transition: all;
+	transition-duration: 200ms;
+	transition-duration: ease-out;
+	transition-delay: 50ms;
+}
+
+
+@media only screen and (max-width: 1180px) {
+	.project-container {
+		width: 95%;
+		height: 100%;
+		margin: auto;
+	}
+}

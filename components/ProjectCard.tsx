@@ -2,6 +2,7 @@ import React from 'react'
 import CustomButton from './CustomButton'
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
+import '../src/css_files/projectPage.css'
 
 type techType = {
     image: string,
@@ -10,15 +11,16 @@ type techType = {
 }
 
 interface Props {
-    title: string,
-    description: string,
-    buttonText: string,
-    tech: Array<techType>,
-    link: string,
-    projectNumber: string
+    title: string;
+    description: string;
+    buttonText: string;
+    tech: Array<techType>;
+    link: string;
+    projectNumber: string;
+    background: string;
 }
 
-const ProjectCard: React.FC<Props> = ({title, description, buttonText, tech, link, projectNumber}): JSX.Element => {
+const ProjectCard: React.FC<Props> = ({title, description, buttonText, tech, link, projectNumber, background}): JSX.Element => {
     const techDisplay = tech.map((element) => {
         const sizeStyle = {
             width: element.size,
@@ -44,35 +46,44 @@ const ProjectCard: React.FC<Props> = ({title, description, buttonText, tech, lin
     return (
         <>
             <motion.div 
-
                 initial = {{opacity: 0, x: '300px'}}
                 animate = {{opacity: 1, x: 0}}
                 transition ={{delay: Math.random() * .30, duration: .5, ease: 'easeOut'}}
-                
-                className = {`project-card project-card-${projectNumber} flex flex-col justify-center w-full rounded-3xl shadow-lg font-[Poppins] gap-3 p-6`}>
-                    <Link to = {link} className = "w-full flex flex-col gap-2">
-                    
-                    <h1 className = "project-title text-white font-bold text-xl">{title}</h1>
-                    <p className = "project-description text-white text-sm max-w-[35rem] ">
-                        {description}
-                    </p>
+                style = {{
+                    backgroundImage: `url(${background})`,
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                }}
+                className = {`relative overflow-hidden project-card project-card-${projectNumber} flex flex-col justify-center w-full rounded-3xl shadow-lg font-[Poppins] gap-3 p-6`}>
+                    <div className = "black-overlay w-full h-[8rem] absolute bottom-0 bg-gradient-to-t from-black ml-[-1.5rem]"/>
+                    <div className = "black-overlay w-full h-[8rem] absolute top-[0] bg-gradient-to-b from-black ml-[-1.5rem]"/>
 
-                    <div className = "project-bottom-flex-div flex justify-between items-center">
+                    <div className = "w-full h-full absolute top-0 left-0 bg-black opacity-0"/>
 
-                        <div className = "project-bottom-left-side flex gap-[.6rem]">
-                            {techDisplay}
+                    <Link to = {link} className = "w-full flex flex-col gap-2 project-link">
+                        <h1 className = "project-title text-white font-bold text-xl z-10">{title}</h1>
+                        <div className = "project-description-box h-[100px] z-10 opacity-0">
+                            <p className = "project-description text-white text-sm max-w-[35rem] ">
+                                {description}
+                            </p>
                         </div>
 
-                        <CustomButton
-                            colors = {['black', 'gray-500']}
-                            text = {buttonText}
-                            link = {link}
-                            absolute = {[false, 0, 0, 0, 0]}
-                            newPage = {true}
-                            size = {['7.5rem', '2.5rem']}
-                            arrowSize = {['1.8rem', '0']}
-                        />
-                    </div>
+                        <div className = "project-bottom-flex-div flex justify-between items-center">
+
+                            <div className = "project-bottom-left-side flex gap-[.6rem]">
+                                {techDisplay}
+                            </div>
+
+                            <CustomButton
+                                colors = {['black', 'gray-500']}
+                                text = {buttonText}
+                                link = {link}
+                                absolute = {[false, 0, 0, 0, 0]}
+                                newPage = {true}
+                                size = {['7.5rem', '2.5rem']}
+                                arrowSize = {['1.8rem', '0']}
+                            />
+                        </div>
                 </Link>
             </motion.div>
         </>

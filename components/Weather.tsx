@@ -89,7 +89,7 @@ const Weather: React.FC = (): JSX.Element => {
 
             <div className = "h-1/4 flex relative bottom-box rounded-br-2xl rounded-bl-2xl items-center justify-between select-none ">
                 <span className = "text-white text-md weather-left-box mb-7 z-[1000]">Romania, Bucharest</span>
-                <img src={`${weatherIcon}.svg`} draggable = "false" alt="weather_icon" className = "select-none z-[1] aspect-square object-contain h-[17rem] opacity-10 absolute bottom-[-200%] right-0"/>
+                <img src={`/${weatherIcon}.svg`} draggable = "false" alt="weather_icon" className = "select-none z-[1] aspect-square object-contain h-[17rem] opacity-10 absolute bottom-[-200%] right-0"/>
             </div>
         </motion.div>
     )

@@ -27,6 +27,10 @@
     animation: logoAnimation 1000ms;
 }
 
+.animation-card:hover .animated-logo {
+    animation: logoAnimation 1000ms;
+}
+
 .linkedin-card:hover .animated-logo {
     animation: logoAnimation 1000ms;
 }

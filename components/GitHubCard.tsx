@@ -17,7 +17,7 @@ const GitHubCard: React.FC = (): JSX.Element => {
           target = "_blank"
           className = "shadow-lg bg-black w-full h-full min-h-[15rem] md:min-h-[0rem] rounded-3xl flex justify-center items-center relative cursor-pointer"
       >
-          <img src="github_logo.png" alt="GitHub Image" draggable = "false" className = "animated-logo aspect-square object-fit w-24"/>
+          <img src="/github_logo.png" alt="GitHub Image" draggable = "false" className = "animated-logo aspect-square object-fit w-24"/>
       </Link>
     </motion.div>
   )

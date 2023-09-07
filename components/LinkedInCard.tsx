@@ -17,7 +17,7 @@ const LinkedInCard: React.FC = (): JSX.Element => {
           target = "_blank"
           className = "shadow-lg bg-linkedin-blue w-full h-full min-h-[15rem] md:min-h-[0rem] rounded-3xl flex justify-center items-center relative cursor-pointer"
           >
-          <img src="linkedin_logo.png" alt="LinkedIn Logo" draggable = "false" className = "animated-logo aspect-square object-fit w-[4.5rem] "/>
+          <img src="/linkedin_logo.png" alt="LinkedIn Logo" draggable = "false" className = "animated-logo aspect-square object-fit w-[4.5rem] "/>
         </Link>
     </motion.div>
   )

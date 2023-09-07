@@ -12,6 +12,8 @@ import ContactSuccess from '../pages/ContactSuccess'
 import ContactFail from '../pages/ContactFail'
 import ProjectPage from '../pages/ProjectPage'
 
+import ScrollToTop from '../components/ScrollToTop'
+
 import {
   Route,
   Routes,
@@ -25,6 +27,7 @@ const App: React.FC = (): JSX.Element => {
       <>
       <Preloader/> 
         <div className = "main-wrapper flex flex-col items-center">
+          <ScrollToTop/>
           <Routes>
             <Route path = "/" element = {<RootLayout/>} errorElement = {<WentWrong/>}>
               <Route index element = {<Home/>} loader = {homeWeatherLoader}/>
