@@ -91,7 +91,7 @@ const ProjectComponent = ({
             >
                 {/* Banner */}
 
-                <section className = "image-wrapper relative first-letter:selection:w-full h-[38rem] bg-white">
+                <section className = "image-wrapper relative first-letter:selection:w-full md:h-[38rem] h-[30rem] bg-white">
                     <div className = "w-full h-[10rem] absolute bottom-0 bg-gradient-to-t from-black"/>
                     <div className = "w-full h-[10rem] absolute top-0 bg-gradient-to-b from-black"/>
                     <img 
