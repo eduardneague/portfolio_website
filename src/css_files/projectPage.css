@@ -75,3 +75,20 @@
 		margin: auto;
 	}
 }
+
+@media only screen and (max-width: 500px) {
+	.project-container {
+		width: 97%;
+		height: 100%;
+		margin: auto;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.project-container {
+		width: 100%;
+		height: 100%;
+		margin: auto;
+	}
+}
+
