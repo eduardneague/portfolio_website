@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import CustomButton from './CustomButton';
-import {TechType, Persona, EmpathyMap} from '../utils/types'
+import { TechType, Persona, EmpathyMap } from '../utils/types'
 import { Link } from 'react-router-dom';
 
 import '../src/css_files/cardLogoAnimation.css'

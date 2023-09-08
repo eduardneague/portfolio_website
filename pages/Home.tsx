@@ -1,6 +1,6 @@
 import React from 'react'
 import '../src/css_files/grid.css'
-
+//d
 import AboutComponent from '../components/AboutComponent'
 import Skills from '../components/Skills'
 import Weather from '../components/Weather'
