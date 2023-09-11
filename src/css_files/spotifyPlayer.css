@@ -71,7 +71,7 @@
       animation-delay: -14.6s; /* Start mid-way of return of animation */
     }
   }
-/*d*/
+
 @keyframes bounce {
     10% {
       transform: scaleY(0.3); /* start by scaling to 30% */

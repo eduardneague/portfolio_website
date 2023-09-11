@@ -42,10 +42,11 @@ const ProjectPage: React.FC = (): JSX.Element => {
     }[] = []
     let functionality: {
         title: string;
-        image: string;
+        image?: string;
     }[] = []
     let linkBackground: string = ''
     let githubLink: string = ''
+    let video: undefined | string = undefined
 
     // Amber Project
 
@@ -161,6 +162,205 @@ const ProjectPage: React.FC = (): JSX.Element => {
         ]
         linkBackground = 'bg-orange-500'
         githubLink = "https://github.com/eduardneague/amber"
+        video = undefined
+    } 
+
+    // Runwild Project
+
+    if(projectId == 'runwild') {
+        titleColor = "text-purple-500"
+        shortDescription = "On the fly AI generated images and suggestions"
+        buttonColors = ['purple-500', 'purple-800']
+        mainBackground = "/runwild/runwild_mainbackground.png"
+        siteLink = "https://runwildai.netlify.app/"
+        description = "A web application built for the sole puropse of generating beautiful AI images within the shortest of time."
+        role = ['Front End Developer', 'Back End Developer', 'UX/UI Designer', 'Researcher']
+        duration = ['2 Weeks', 'April 10th 2023 - April 24th 2023']
+        problems = "Other AI image generation websites take a while to generate images."
+        goal = "Create a very fast AI image generation application."
+        tech = [
+            {name: 'React', image: '/react_logo.png', size: '2rem'},
+            {name: 'Tailwind', image: '/tailwind_logo.png', size: '2rem'},
+            {name: 'Figma', image: '/figma_logo.png', size: '2rem'},
+            {name: 'TypeScript', image: '/typescript_logo.png', size: '2rem'}, 
+            {name: 'Microsoft Azure', image: '/azure_logo.png', size: '2rem'}, 
+            {name: 'NextJS', image: '/nextjs_logo.png', size: '2rem'}, 
+            {name: 'OpenAI', image: '/chatgpt_logo.png', size: '2rem'}, 
+        ]
+        persona = {
+            name: 'Voinea Andrei',
+            profession: 'CUSTOMER SUPPORT',
+            details: ['Age 23', 'Male', 'Bucharest', 'Creative', 'Married'],
+            goals: ['Generate AI images for a blog he is writing.', 'Would be great if they can be generated for free.'],
+            bio: "Voinea is a very creative, free spirit. He's quite busy with work, but whenever he gets the chance he loves writing his blog.",
+            frustrations: 'He wishes he could create wonderful looking AI images for free, quickly and easily.',
+            image: '/runwild/runwild_persona.png'
+        }
+        empathyMap = [
+            {
+                title: 'says',
+                details: [
+                    'Wants fast results.', 
+                    'Looks for high quality images.',
+                    'Wants images for his blog.',
+                ]
+            },
+            {
+                title: 'thinks',
+                details: [
+                    "I don't want to spend too much.",
+                    'How long am I going to use it for?'
+                ]
+            },
+            {
+                title: 'does',
+                details: [
+                    'Checks phone everyday for new apps', 
+                    'Creates AI images to showcase on his blog.'
+                ]
+            },
+            {
+                title: 'feels',
+                details: [
+                    'Excited for the endless posibilities of AI.', 
+                    'Quite scared of trying something new.',
+                ]
+            }
+        ]
+        userflowImage = "/runwild/runwild_userflow.png"
+        visualDesign = [
+            {
+                name: 'runwild_design_1',
+                image: '/runwild/runwild_design_1.png'
+            },
+            {
+                name: 'runwild_design_2',
+                image: '/runwild/runwild_design_2.png'
+            },
+        ]
+        functionality = [
+            {
+                title: 'Custom API endpoints hosted with Microsoft Azure',
+                image: '/runwild/runwild_functionality_1.png'
+            },
+            {
+                title: 'Microsoft Azure Storage Blobs',
+                image: '/runwild/runwild_functionality_2.png'
+
+            },
+            {
+                title: 'ChatGPT and DALL-E 2.0 Integration',
+                image: '/runwild/runwild_functionality_3.png'
+
+            },
+            {
+                title: 'Modern NextJs Server-side Rendering',
+                image: '/runwild/runwild_functionality_4.png'
+            },
+
+        ]
+        linkBackground = 'bg-purple-500'
+        githubLink = "https://github.com/eduardneague/ai-ionutz"
+        video = "https://www.youtube.com/embed/3-I1zuL-MpY?controls=1"
+    } 
+
+    // Diskus Project
+
+    if(projectId == 'diskus') {
+        titleColor = "text-pink-400"
+        shortDescription = "A place for all diskussions."
+        buttonColors = ['pink-300', 'pink-400']
+        mainBackground = "/diskus/diskus_mainbackground.png"
+        siteLink = "https://diskusapp.vercel.app/"
+        description = "A web application built for creating any type of diskussions and sharing your experiences with the world."
+        role = ['Front End Developer', 'Back End Developer', 'UX/UI Designer', 'Researcher']
+        duration = ['1 Month', 'May 2023 - June 2023']
+        problems = "Starting diskussions on the web can be challanging and overwhelming."
+        goal = "Very quickly create diskussions about things the user would want to share with the world."
+        tech = [
+            {name: 'React', image: '/react_logo.png', size: '2rem'},
+            {name: 'Tailwind', image: '/tailwind_logo.png', size: '2rem'},
+            {name: 'Figma', image: '/figma_logo.png', size: '2rem'},
+            {name: 'TypeScript', image: '/typescript_logo.png', size: '2rem'}, 
+            {name: 'MongoDB', image: '/mongodb_logo.png', size: '2rem'}, 
+            {name: 'NextJS', image: '/nextjs_logo.png', size: '2rem'}, 
+            {name: 'Clerk', image: '/clerk_logo.png', size: '2rem'}, 
+        ]
+        persona = {
+            name: 'Voinea Andrei',
+            profession: 'CUSTOMER SUPPORT',
+            details: ['Age 23', 'Male', 'Bucharest', 'Creative', 'Married'],
+            goals: ['Generate AI images for a blog he is writing.', 'Would be great if they can be generated for free.'],
+            bio: "Voinea is a very creative, free spirit. He's quite busy with work, but whenever he gets the chance he loves writing his blog.",
+            frustrations: 'He wishes he could create wonderful looking AI images for free, quickly and easily.',
+            image: '/runwild/runwild_persona.png'
+        }
+        empathyMap = [
+            {
+                title: 'says',
+                details: [
+                    'Wants fast results.', 
+                    'Looks for high quality images.',
+                    'Wants images for his blog.',
+                ]
+            },
+            {
+                title: 'thinks',
+                details: [
+                    "I don't want to spend too much.",
+                    'How long am I going to use it for?'
+                ]
+            },
+            {
+                title: 'does',
+                details: [
+                    'Checks phone everyday for new apps', 
+                    'Creates AI images to showcase on his blog.'
+                ]
+            },
+            {
+                title: 'feels',
+                details: [
+                    'Excited for the endless posibilities of AI.', 
+                    'Quite scared of trying something new.',
+                ]
+            }
+        ]
+        userflowImage = "/runwild/runwild_userflow.png"
+        visualDesign = [
+            {
+                name: 'runwild_design_1',
+                image: '/runwild/runwild_design_1.png'
+            },
+            {
+                name: 'runwild_design_2',
+                image: '/runwild/runwild_design_2.png'
+            },
+        ]
+        functionality = [
+            {
+                title: 'Custom API endpoints hosted with Microsoft Azure',
+                image: '/runwild/runwild_functionality_1.png'
+            },
+            {
+                title: 'Microsoft Azure Storage Blobs',
+                image: '/runwild/runwild_functionality_2.png'
+
+            },
+            {
+                title: 'ChatGPT and DALL-E 2.0 Integration',
+                image: '/runwild/runwild_functionality_3.png'
+
+            },
+            {
+                title: 'Modern NextJs Server-side Rendering',
+                image: '/runwild/runwild_functionality_4.png'
+            },
+
+        ]
+        linkBackground = 'bg-purple-500'
+        githubLink = "https://github.com/eduardneague/ai-ionutz"
+        video = undefined
     } 
 
     return (
@@ -186,6 +386,7 @@ const ProjectPage: React.FC = (): JSX.Element => {
                     functionality = {functionality}
                     linkBackground= {linkBackground}
                     githubLink = {githubLink}
+                    video = {video}
                 />
             </div>
         </>

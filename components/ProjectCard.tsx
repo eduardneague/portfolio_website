@@ -55,8 +55,8 @@ const ProjectCard: React.FC<Props> = ({title, description, buttonText, tech, lin
                     backgroundRepeat: 'no-repeat',
                 }}
                 className = {`relative overflow-hidden project-card project-card-${projectNumber} flex flex-col justify-center w-full rounded-3xl shadow-lg font-[Poppins] gap-3 p-6`}>
-                    <div className = "black-overlay w-full h-[8rem] absolute bottom-0 bg-gradient-to-t from-black ml-[-1.5rem]"/>
-                    <div className = "black-overlay w-full h-[8rem] absolute top-[0] bg-gradient-to-b from-black ml-[-1.5rem]"/>
+                    <div className = "black-overlay w-full h-[5rem] opacity-60 absolute bottom-0 bg-gradient-to-t from-black ml-[-1.5rem]"/>
+                    <div className = "black-overlay w-full h-[5rem] opacity-60 absolute top-[0] bg-gradient-to-b from-black ml-[-1.5rem]"/>
 
                     <div className = "w-full h-full absolute top-0 left-0 bg-black opacity-0"/>
 

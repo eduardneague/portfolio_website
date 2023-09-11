@@ -25,42 +25,36 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
             ]}
         />
         <ProjectCard
-            title = 'Project 2'
-            background = '/amber/amber_background.png'
+            title = 'Runwild'
+            background = '/runwild/runwild_mainbackground.png'
             projectNumber = '2'
             description = {
-              `Here is the description of the project itself.
-              bla bla bla bla bla Lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem 
-              (this description is only on hover)
+              `A web application built for the sole puropse of generating beautiful AI images within the shortest of time.
             `}
             link = 'runwild'
-            buttonText = 'Project 2'
+            buttonText = 'Runwild'
             tech = {[
               {name: 'React', image: '/react_logo.png', size: '1.6rem'},
               {name: 'Tailwind', image: '/tailwind_logo.png', size: '1.6rem'},
-              {name: 'Redux', image: '/redux_logo.png', size: '1.6rem'},
-              {name: 'Figma', image: '/figma_logo.png', size: '1.6rem'},
+              {name: 'Microsoft Azure', image: '/azure_logo.png', size: '1.6rem'},
+              {name: 'NextJS', image: '/nextjs_logo.png', size: '1.6rem'},
               {name: 'TypeScript', image: '/typescript_logo.png', size: '1.6rem'}, 
             ]}
         />
         <ProjectCard
-            title = 'Project 3'
-            background = '/amber/amber_background.png'
+            title = 'Diskus'
+            background = '/diskus/diskus_background.png'
             projectNumber = '3'
             description = {
-              `Here is the description of the project itself.
-              bla bla bla bla bla Lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem 
-              (this description is only on hover)
+              `A web application built for creating any type of diskussions and sharing your experiences with the world.
             `}
             link = 'diskus'
             buttonText = 'Project 3'
             tech = {[
               {name: 'React', image: '/react_logo.png', size: '1.6rem'},
-              {name: 'Tailwind', image: '/tailwind_logo.png', size: '1.6rem'},
-              {name: 'Redux', image: '/redux_logo.png', size: '1.6rem'},
-              {name: 'Figma', image: '/figma_logo.png', size: '1.6rem'},
+              {name: 'MongoDB', image: '/mongodb_logo.png', size: '1.6rem'},
+              {name: 'NextJs', image: '/nextjs_logo.png', size: '1.6rem'},
+              {name: 'Clerk', image: '/clerk_logo.png', size: '1.6rem'},
               {name: 'TypeScript', image: '/typescript_logo.png', size: '1.6rem'}, 
             ]}
         />

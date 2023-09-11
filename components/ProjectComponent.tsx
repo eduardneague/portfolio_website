@@ -27,10 +27,11 @@ interface Props {
     }[];
     functionality: {
         title: string;
-        image: string;
+        image?: string;
     }[];
     linkBackground: string;
     githubLink: string;
+    video?: undefined | string;
 }
 
 const ProjectComponent = ({ 
@@ -52,7 +53,8 @@ const ProjectComponent = ({
     visualDesign,
     functionality,
     linkBackground,
-    githubLink
+    githubLink,
+    video
 }: Props): JSX.Element => {
     const projectTitle = title?.charAt(0).toUpperCase() + title.slice(1)
 
@@ -92,8 +94,8 @@ const ProjectComponent = ({
                 {/* Banner */}
 
                 <section className = "image-wrapper relative first-letter:selection:w-full md:h-[38rem] h-[30rem] bg-white">
-                    <div className = "w-full h-[10rem] absolute bottom-0 bg-gradient-to-t from-black"/>
-                    <div className = "w-full h-[10rem] absolute top-0 bg-gradient-to-b from-black"/>
+                    <div className = "w-full h-[10rem] absolute opacity-80 bottom-0 bg-gradient-to-t from-black"/>
+                    <div className = "w-full h-[10rem] absolute opacity-80 top-0 bg-gradient-to-b from-black"/>
                     <img 
                         src = {mainBackground} 
                         alt = {`${title}-background`} 
@@ -298,6 +300,38 @@ const ProjectComponent = ({
                     </div>
                 </section>
                 <hr className = "w-[91%] mx-auto mt-3"/>
+
+                {/* Video */}
+
+                {
+                    video && (
+                        <>
+                            <section className = "w-full px-12 pt-8">
+                            <motion.h1
+                                initial = {{opacity: 0, x: '300px'}}
+                                viewport = {{once: true}}
+                                whileInView = {{opacity: 1, x: '0px'}} 
+                                transition = {{delay: Math.random() * .30, duration: animationDuration, ease: 'easeOut'}}
+                                className = {`md:text-3xl text-2xl font-bold pb-8 ${titleColor}`}
+                            >
+                                Video Demo
+                            </motion.h1>
+                            <hr className = "w-[100%] mx-auto mb-8"/>
+        
+                            <iframe 
+                                title = "Runwild Demo"
+                                allowFullScreen
+                                className = "w-full md:h-[35rem]"
+                                src = {video}
+                            >
+                            </iframe>
+
+                            </section>
+                            <hr className = "w-[91%] mx-auto mt-3"/>
+                        </>
+                    )
+                }
+
 
                 {/* User Research */}
 
@@ -522,7 +556,7 @@ const ProjectComponent = ({
                         viewport = {{once: true}}
                         whileInView = {{opacity: 1, x: '0px'}} 
                         transition = {{delay: Math.random() * .30, duration: animationDuration, ease: 'easeOut'}}
-                        className = "w-full gap-[2rem] mt-5"
+                        className = "w-full gap-[2rem] mt-5 flex justify-center items-center"
                     >
                         <img 
                             src = {userflowImage}
@@ -613,7 +647,7 @@ const ProjectComponent = ({
                                 transition = {{delay: Math.random() * .30, duration: animationDuration, ease: 'easeOut'}}
                                 key = {tab.title} className = "w-full gap-[2rem] mt-5"
                             >
-                                <p className = "md:text-2xl text-xl text-center font-bold">{tab.title}</p>
+                                <p className = "md:text-2xl text-xl text-center font-bold mb-4">{tab.title}</p>
                                 <img 
                                     src = {tab.image}
                                     alt = {`${tab.title}-functionality`}
@@ -671,7 +705,7 @@ const ProjectComponent = ({
                         >
                             <img src="/github_logo.png" alt="GitHub Image" draggable = "false" className = "animated-logo aspect-square object-fit w-16"/>
                             <h1 className = " text-white font-[Poppins] font-bold text-xl max-w-[13rem] sm:max-w-[17rem]">
-                                {projectTitle} GitHub Repository
+                                {projectTitle} Repository
                             </h1>
                         </Link>
                     </motion.div>
