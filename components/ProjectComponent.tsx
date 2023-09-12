@@ -21,10 +21,10 @@ interface Props {
     persona: Persona;
     empathyMap: EmpathyMap[];
     userflowImage: string;
-    visualDesign: {
+    visualDesign?: {
         name: string;
         image: string;
-    }[];
+    }[] | undefined;
     functionality: {
         title: string;
         image?: string;
@@ -566,52 +566,57 @@ const ProjectComponent = ({
                         />
                     </motion.div>
                 </section>
-                <hr className = "w-[91%] mx-auto mt-1"/>
+                    <hr className = "w-[91%] mx-auto mt-1"/>
 
-                {/* Visual Design */}
-
-                <section className = "w-full px-12 pt-8 pb-6">
-                    <motion.h1 
-                        initial = {{opacity: 0, x: '300px'}}
-                        viewport = {{once: true}}
-                        whileInView = {{opacity: 1, x: '0px'}} 
-                        transition = {{delay: Math.random() * .30, duration: animationDuration, ease: 'easeOut'}}
-                        className = {`text-2xl md:text-3xl font-bold pb-4 ${titleColor}`}
-                    >
-                        Visual Design
-                    </motion.h1>
-                        <motion.p 
+                    {/* Visual Design */}
+                    {visualDesign && (
+                        <>
+                        
+                        <section className = "w-full px-12 pt-8 pb-6">
+                        <motion.h1 
                             initial = {{opacity: 0, x: '300px'}}
                             viewport = {{once: true}}
                             whileInView = {{opacity: 1, x: '0px'}} 
                             transition = {{delay: Math.random() * .30, duration: animationDuration, ease: 'easeOut'}}
-                            className = "text-gray-500 text-base"
+                            className = {`text-2xl md:text-3xl font-bold pb-4 ${titleColor}`}
                         >
-                            Fully responsive, mobile-first approach was taken when the application was built.
-                        </motion.p>
-                    <hr className = "w-[100%] mx-auto my-8"/>
-
-                    {visualDesign.map((tab) => {
-                        return (
-                            <motion.div 
+                            Visual Design
+                        </motion.h1>
+                            <motion.p 
                                 initial = {{opacity: 0, x: '300px'}}
                                 viewport = {{once: true}}
                                 whileInView = {{opacity: 1, x: '0px'}} 
                                 transition = {{delay: Math.random() * .30, duration: animationDuration, ease: 'easeOut'}}
-                                key = {tab.name} className = "w-full gap-[2rem] mt-5"
+                                className = "text-gray-500 text-base"
                             >
-                                <img 
-                                    src = {tab.image}
-                                    alt = {`${tab.name}-design`}
-                                    draggable = {false}
-                                    className = "select-none object-contain" 
-                                />
-                            </motion.div>
-                        )
-                    })}
+                                Fully responsive, mobile-first approach was taken when the application was built.
+                            </motion.p>
+                        <hr className = "w-[100%] mx-auto my-8"/>
 
-                </section>
-                <hr className = "w-[91%] mx-auto mt-1"/>
+                        {visualDesign.map((tab) => {
+                            return (
+                                <motion.div 
+                                    initial = {{opacity: 0, x: '300px'}}
+                                    viewport = {{once: true}}
+                                    whileInView = {{opacity: 1, x: '0px'}} 
+                                    transition = {{delay: Math.random() * .30, duration: animationDuration, ease: 'easeOut'}}
+                                    key = {tab.name} className = "w-full gap-[2rem] mt-5"
+                                >
+                                    <img 
+                                        src = {tab.image}
+                                        alt = {`${tab.name}-design`}
+                                        draggable = {false}
+                                        className = "select-none object-contain" 
+                                    />
+                                </motion.div>
+                            )
+                        })}
+
+                    </section>
+                    <hr className = "w-[91%] mx-auto mt-1"/>
+                </>
+                )}
+                
 
                 {/* Functionality */}
 

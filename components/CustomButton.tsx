@@ -41,7 +41,7 @@ const CustomButton: React.FC<Props> = ({colors, text, link, absolute, newPage, s
             <div className = "absolute opacity-0 from-linkedin-blue to-linkedin-light-blue"></div>
             <div className = "absolute opacity-0 from-orange-500 to-orange-800"></div>
             <div className = "absolute opacity-0 from-purple-500 to-purple-800"></div>
-            <div className = "absolute opacity-0 from-pink-300 to-pink-400"></div>
+            <div className = "absolute opacity-0 from-diskus-pink to-purple-400"></div>
 
             <div style = {buttonWidth}>
                 <Link 

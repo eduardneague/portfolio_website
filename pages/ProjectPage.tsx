@@ -39,7 +39,7 @@ const ProjectPage: React.FC = (): JSX.Element => {
     let visualDesign: {
         name: string;
         image: string;
-    }[] = []
+    }[] | undefined = []
     let functionality: {
         title: string;
         image?: string;
@@ -267,10 +267,10 @@ const ProjectPage: React.FC = (): JSX.Element => {
     // Diskus Project
 
     if(projectId == 'diskus') {
-        titleColor = "text-pink-400"
+        titleColor = "text-diskus-pink"
         shortDescription = "A place for all diskussions."
-        buttonColors = ['pink-300', 'pink-400']
-        mainBackground = "/diskus/diskus_mainbackground.png"
+        buttonColors = ['diskus-pink', 'purple-400']
+        mainBackground = "/diskus/diskus_background.png"
         siteLink = "https://diskusapp.vercel.app/"
         description = "A web application built for creating any type of diskussions and sharing your experiences with the world."
         role = ['Front End Developer', 'Back End Developer', 'UX/UI Designer', 'Researcher']
@@ -287,79 +287,178 @@ const ProjectPage: React.FC = (): JSX.Element => {
             {name: 'Clerk', image: '/clerk_logo.png', size: '2rem'}, 
         ]
         persona = {
-            name: 'Voinea Andrei',
-            profession: 'CUSTOMER SUPPORT',
-            details: ['Age 23', 'Male', 'Bucharest', 'Creative', 'Married'],
-            goals: ['Generate AI images for a blog he is writing.', 'Would be great if they can be generated for free.'],
-            bio: "Voinea is a very creative, free spirit. He's quite busy with work, but whenever he gets the chance he loves writing his blog.",
-            frustrations: 'He wishes he could create wonderful looking AI images for free, quickly and easily.',
-            image: '/runwild/runwild_persona.png'
+            name: 'Iordache Robert',
+            profession: '',
+            details: ['Age 30', 'Male', 'Bucharest', 'Gamer', 'Married'],
+            goals: ['Wants to share his opinions about his favorite video games with people.', 'Wants to be able to create as many threads whenever he wants.'],
+            bio: "Iordache Robert is a very passionate man about video games and has been playing them ever since he was young. He loves talking about them with people who have similar interests.",
+            frustrations: 'He wishes he could have a platform where he could talk about the games he loves.',
+            image: '/diskus/diskus_persona.png'
         }
         empathyMap = [
             {
                 title: 'says',
                 details: [
-                    'Wants fast results.', 
-                    'Looks for high quality images.',
-                    'Wants images for his blog.',
+                    "I'd love to talk about updates in my favorite games.", 
+                    "I love reading what others think about these games."
                 ]
             },
             {
                 title: 'thinks',
                 details: [
-                    "I don't want to spend too much.",
-                    'How long am I going to use it for?'
+                    "How could would it be to make friends like this?",
+                    'Sharing my interests with others makes me excited.'
                 ]
             },
             {
                 title: 'does',
                 details: [
-                    'Checks phone everyday for new apps', 
-                    'Creates AI images to showcase on his blog.'
+                    'Checks phone for new game updates everyday.', 
+                    'Notes things he likes and dislikes in his diary.'
                 ]
             },
             {
                 title: 'feels',
                 details: [
-                    'Excited for the endless posibilities of AI.', 
+                    'Excited to share his notes with people.', 
                     'Quite scared of trying something new.',
                 ]
             }
         ]
-        userflowImage = "/runwild/runwild_userflow.png"
-        visualDesign = [
-            {
-                name: 'runwild_design_1',
-                image: '/runwild/runwild_design_1.png'
-            },
-            {
-                name: 'runwild_design_2',
-                image: '/runwild/runwild_design_2.png'
-            },
-        ]
+        userflowImage = "/diskus/diskus_userflow.png"
+        visualDesign = undefined
         functionality = [
             {
-                title: 'Custom API endpoints hosted with Microsoft Azure',
-                image: '/runwild/runwild_functionality_1.png'
+                title: 'Full User Authentification with Clerk and MongoDB',
+                image: '/diskus/diskus_functionality_1.png'
             },
             {
-                title: 'Microsoft Azure Storage Blobs',
-                image: '/runwild/runwild_functionality_2.png'
+                title: 'Onboarding Profile Complition Page',
+                image: '/diskus/diskus_functionality_2.png'
 
             },
             {
-                title: 'ChatGPT and DALL-E 2.0 Integration',
-                image: '/runwild/runwild_functionality_3.png'
-
+                title: 'Dynamic Server Side Rendering using NextJS',
+                image: '/diskus/diskus_functionality_3.png'
             },
             {
-                title: 'Modern NextJs Server-side Rendering',
-                image: '/runwild/runwild_functionality_4.png'
+                title: 'Activity Page',
+                image: '/diskus/diskus_functionality_4.png'
             },
-
+            {
+                title: 'Create Thread Functionality',
+                image: '/diskus/diskus_functionality_5.png'
+            },
+            {
+                title: 'See Profile',
+                image: '/diskus/diskus_functionality_6.png'
+            },
+            {
+                title: 'Comment on Threads',
+                image: '/diskus/diskus_functionality_7.png'
+            },
         ]
-        linkBackground = 'bg-purple-500'
-        githubLink = "https://github.com/eduardneague/ai-ionutz"
+        linkBackground = 'bg-diskus-pink'
+        githubLink = "https://github.com/eduardneague/diskus"
+        video = undefined
+    } 
+
+    // ShowCar Project
+
+    if(projectId == 'showcar') {
+        titleColor = "text-diskus-pink"
+        shortDescription = "A place for all diskussions."
+        buttonColors = ['diskus-pink', 'purple-400']
+        mainBackground = "/diskus/diskus_background.png"
+        siteLink = "https://diskusapp.vercel.app/"
+        description = "A web application built for creating any type of diskussions and sharing your experiences with the world."
+        role = ['Front End Developer', 'Back End Developer', 'UX/UI Designer', 'Researcher']
+        duration = ['1 Month', 'May 2023 - June 2023']
+        problems = "Starting diskussions on the web can be challanging and overwhelming."
+        goal = "Very quickly create diskussions about things the user would want to share with the world."
+        tech = [
+            {name: 'React', image: '/react_logo.png', size: '2rem'},
+            {name: 'Tailwind', image: '/tailwind_logo.png', size: '2rem'},
+            {name: 'Figma', image: '/figma_logo.png', size: '2rem'},
+            {name: 'TypeScript', image: '/typescript_logo.png', size: '2rem'}, 
+            {name: 'MongoDB', image: '/mongodb_logo.png', size: '2rem'}, 
+            {name: 'NextJS', image: '/nextjs_logo.png', size: '2rem'}, 
+            {name: 'Clerk', image: '/clerk_logo.png', size: '2rem'}, 
+        ]
+        persona = {
+            name: 'Iordache Robert',
+            profession: '',
+            details: ['Age 30', 'Male', 'Bucharest', 'Gamer', 'Married'],
+            goals: ['Wants to share his opinions about his favorite video games with people.', 'Wants to be able to create as many threads whenever he wants.'],
+            bio: "Iordache Robert is a very passionate man about video games and has been playing them ever since he was young. He loves talking about them with people who have similar interests.",
+            frustrations: 'He wishes he could have a platform where he could talk about the games he loves.',
+            image: '/diskus/diskus_persona.png'
+        }
+        empathyMap = [
+            {
+                title: 'says',
+                details: [
+                    "I'd love to talk about updates in my favorite games.", 
+                    "I love reading what others think about these games."
+                ]
+            },
+            {
+                title: 'thinks',
+                details: [
+                    "How could would it be to make friends like this?",
+                    'Sharing my interests with others makes me excited.'
+                ]
+            },
+            {
+                title: 'does',
+                details: [
+                    'Checks phone for new game updates everyday.', 
+                    'Notes things he likes and dislikes in his diary.'
+                ]
+            },
+            {
+                title: 'feels',
+                details: [
+                    'Excited to share his notes with people.', 
+                    'Quite scared of trying something new.',
+                ]
+            }
+        ]
+        userflowImage = "/diskus/diskus_userflow.png"
+        visualDesign = undefined
+        functionality = [
+            {
+                title: 'Full User Authentification with Clerk and MongoDB',
+                image: '/diskus/diskus_functionality_1.png'
+            },
+            {
+                title: 'Onboarding Profile Complition Page',
+                image: '/diskus/diskus_functionality_2.png'
+
+            },
+            {
+                title: 'Dynamic Server Side Rendering using NextJS',
+                image: '/diskus/diskus_functionality_3.png'
+            },
+            {
+                title: 'Activity Page',
+                image: '/diskus/diskus_functionality_4.png'
+            },
+            {
+                title: 'Create Thread Functionality',
+                image: '/diskus/diskus_functionality_5.png'
+            },
+            {
+                title: 'See Profile',
+                image: '/diskus/diskus_functionality_6.png'
+            },
+            {
+                title: 'Comment on Threads',
+                image: '/diskus/diskus_functionality_7.png'
+            },
+        ]
+        linkBackground = 'bg-diskus-pink'
+        githubLink = "https://github.com/eduardneague/diskus"
         video = undefined
     } 
 

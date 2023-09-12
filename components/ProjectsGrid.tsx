@@ -46,10 +46,10 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
             background = '/diskus/diskus_background.png'
             projectNumber = '3'
             description = {
-              `A web application built for creating any type of diskussions and sharing your experiences with the world.
+              `A web application built for creating any type of discussion and sharing your experiences with the world.
             `}
             link = 'diskus'
-            buttonText = 'Project 3'
+            buttonText = 'Diskus'
             tech = {[
               {name: 'React', image: '/react_logo.png', size: '1.6rem'},
               {name: 'MongoDB', image: '/mongodb_logo.png', size: '1.6rem'},
@@ -59,8 +59,8 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
             ]}
         />
         <ProjectCard
-            title = 'Project 4'
-            background = '/amber/amber_background.png'
+            title = 'Showcar'
+            background = '/showcar/showcar_background.png'
             projectNumber = '4'
             description = {
               `Here is the description of the project itself.
@@ -69,11 +69,11 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
               (this description is only on hover)
             `}
             link = 'showcar'
-            buttonText = 'Project 4'
+            buttonText = 'Showcar'
             tech = {[
               {name: 'React', image: '/react_logo.png', size: '1.6rem'},
               {name: 'Tailwind', image: '/tailwind_logo.png', size: '1.6rem'},
-              {name: 'Redux', image: '/redux_logo.png', size: '1.6rem'},
+              {name: 'NextJS', image: '/nextjs_logo.png', size: '1.6rem'},
               {name: 'Figma', image: '/figma_logo.png', size: '1.6rem'},
               {name: 'TypeScript', image: '/typescript_logo.png', size: '1.6rem'}, 
             ]}
