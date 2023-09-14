@@ -18,7 +18,7 @@ import {
   Route,
   Routes,
 } from 'react-router-dom'
-//d 
+
 import './css_files/buttons.css'
 import './css_files/grid.css'
 
@@ -37,10 +37,8 @@ const App: React.FC = (): JSX.Element => {
               </Route>
               <Route path = "contact" element = {<Contact/>}/>
             </Route>
-
             <Route path = '/contact/success' element = {<ContactSuccess/>} errorElement = {<WentWrong/>}/>
             <Route path = '/contact/fail' element = {<ContactFail/>} errorElement = {<WentWrong/>}/>
-          
           </Routes>
         </div>
       </>

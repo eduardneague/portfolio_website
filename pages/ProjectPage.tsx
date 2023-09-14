@@ -288,7 +288,7 @@ const ProjectPage: React.FC = (): JSX.Element => {
         ]
         persona = {
             name: 'Iordache Robert',
-            profession: '',
+            profession: 'GAME DEVELOPER',
             details: ['Age 30', 'Male', 'Bucharest', 'Gamer', 'Married'],
             goals: ['Wants to share his opinions about his favorite video games with people.', 'Wants to be able to create as many threads whenever he wants.'],
             bio: "Iordache Robert is a very passionate man about video games and has been playing them ever since he was young. He loves talking about them with people who have similar interests.",
@@ -366,99 +366,89 @@ const ProjectPage: React.FC = (): JSX.Element => {
     // ShowCar Project
 
     if(projectId == 'showcar') {
-        titleColor = "text-diskus-pink"
+        titleColor = "text-showcar-light"
         shortDescription = "A place for all diskussions."
-        buttonColors = ['diskus-pink', 'purple-400']
-        mainBackground = "/diskus/diskus_background.png"
-        siteLink = "https://diskusapp.vercel.app/"
-        description = "A web application built for creating any type of diskussions and sharing your experiences with the world."
-        role = ['Front End Developer', 'Back End Developer', 'UX/UI Designer', 'Researcher']
-        duration = ['1 Month', 'May 2023 - June 2023']
-        problems = "Starting diskussions on the web can be challanging and overwhelming."
-        goal = "Very quickly create diskussions about things the user would want to share with the world."
+        buttonColors = ['showcar-light', 'showcar-dark']
+        mainBackground = "/showcar/showcar_background.png"
+        siteLink = "https://showcar-ebon.vercel.app/"
+        description = "Web application that utilizes multiple APIs to create a wonderful and seemless car finding experience."
+        role = ['Front End Developer', 'UX/UI Designer', 'Researcher']
+        duration = ['2 Weeks', 'July 10th 2023 - July 24th 2023']
+        problems = "Finding cars to rent or purchase can be quite time consuming."
+        goal = "Very quickly be able to find a car to rent or purchase from a trusted dealer."
         tech = [
             {name: 'React', image: '/react_logo.png', size: '2rem'},
             {name: 'Tailwind', image: '/tailwind_logo.png', size: '2rem'},
             {name: 'Figma', image: '/figma_logo.png', size: '2rem'},
             {name: 'TypeScript', image: '/typescript_logo.png', size: '2rem'}, 
-            {name: 'MongoDB', image: '/mongodb_logo.png', size: '2rem'}, 
             {name: 'NextJS', image: '/nextjs_logo.png', size: '2rem'}, 
-            {name: 'Clerk', image: '/clerk_logo.png', size: '2rem'}, 
+            {name: 'Headless UI', image: '/headlessui_logo.png', size: '2rem'}, 
         ]
         persona = {
-            name: 'Iordache Robert',
-            profession: '',
-            details: ['Age 30', 'Male', 'Bucharest', 'Gamer', 'Married'],
-            goals: ['Wants to share his opinions about his favorite video games with people.', 'Wants to be able to create as many threads whenever he wants.'],
-            bio: "Iordache Robert is a very passionate man about video games and has been playing them ever since he was young. He loves talking about them with people who have similar interests.",
-            frustrations: 'He wishes he could have a platform where he could talk about the games he loves.',
-            image: '/diskus/diskus_persona.png'
+            name: 'Grecu Damian',
+            profession: 'Fitness Trainer',
+            details: ['Age 28', 'Male', 'Bucharest', 'Loves Fitness', 'Married'],
+            goals: ['Wants to be able to rent cars so that he can go from and to work.', 'Considers buying a car in the long run, but is not sure which one to pick.'],
+            bio: "Grecu Damian is a Fitness Trainer and Nutritionist. He has always loved helping other people and so, by combining his passions with his aspirations, he has chosen this path.",
+            frustrations: 'Public transport is unreliable for him, as though he rarely makes it on time despite trying his best.',
+            image: '/showcar/showcar_persona.png'
         }
         empathyMap = [
             {
                 title: 'says',
                 details: [
-                    "I'd love to talk about updates in my favorite games.", 
-                    "I love reading what others think about these games."
+                    "How I wish I had a car right now...", 
+                    "I hope I won't have my clients wait too long."
                 ]
             },
             {
                 title: 'thinks',
                 details: [
-                    "How could would it be to make friends like this?",
-                    'Sharing my interests with others makes me excited.'
+                    "How could I make sure that I always make it on time?",
+                    'Is there any way for me to rent a car for cheap?'
                 ]
             },
             {
                 title: 'does',
                 details: [
-                    'Checks phone for new game updates everyday.', 
-                    'Notes things he likes and dislikes in his diary.'
+                    'Checks car rental services everyday.', 
+                    'Tries to get in touch with people selling cars.'
                 ]
             },
             {
                 title: 'feels',
                 details: [
-                    'Excited to share his notes with people.', 
-                    'Quite scared of trying something new.',
+                    'Scared that buying a car may not be worth it in the long run.', 
+                    'Uncertain as to how a rental service works.',
                 ]
             }
         ]
-        userflowImage = "/diskus/diskus_userflow.png"
+        userflowImage = "/showcar/showcar_userflow.png"
         visualDesign = undefined
         functionality = [
             {
-                title: 'Full User Authentification with Clerk and MongoDB',
-                image: '/diskus/diskus_functionality_1.png'
+                title: 'Car model fetching with Cars by API-Ninjas',
+                image: '/showcar/showcar_functionality_1.png'
             },
             {
-                title: 'Onboarding Profile Complition Page',
-                image: '/diskus/diskus_functionality_2.png'
-
+                title: 'Fully responsive mobile design',
+                image: '/showcar/showcar_functionality_2.png'
             },
             {
-                title: 'Dynamic Server Side Rendering using NextJS',
-                image: '/diskus/diskus_functionality_3.png'
+                title: 'Filters built with Headless UI',
+                image: '/showcar/showcar_functionality_3.png'
             },
             {
-                title: 'Activity Page',
-                image: '/diskus/diskus_functionality_4.png'
+                title: 'Dynamic Detail Pop-up',
+                image: '/showcar/showcar_functionality_4.png'
             },
             {
-                title: 'Create Thread Functionality',
-                image: '/diskus/diskus_functionality_5.png'
-            },
-            {
-                title: 'See Profile',
-                image: '/diskus/diskus_functionality_6.png'
-            },
-            {
-                title: 'Comment on Threads',
-                image: '/diskus/diskus_functionality_7.png'
+                title: 'Different angles car photos with IMAGINStudio',
+                image: '/showcar/showcar_functionality_5.png'
             },
         ]
-        linkBackground = 'bg-diskus-pink'
-        githubLink = "https://github.com/eduardneague/diskus"
+        linkBackground = 'bg-showcar-light'
+        githubLink = "https://github.com/eduardneague/car_showcase"
         video = undefined
     } 
 

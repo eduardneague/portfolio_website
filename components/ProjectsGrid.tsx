@@ -63,10 +63,8 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
             background = '/showcar/showcar_background.png'
             projectNumber = '4'
             description = {
-              `Here is the description of the project itself.
-              bla bla bla bla bla Lorem ipsum lorem ipsum
-              lorem ipsum lorem ipsum lorem ipsum lorem 
-              (this description is only on hover)
+              `Web application that utilizes multiple APIs to create 
+              a wonderful and seemless car finding experience.
             `}
             link = 'showcar'
             buttonText = 'Showcar'
@@ -74,8 +72,8 @@ const ProjectsGrid: React.FC = (): JSX.Element => {
               {name: 'React', image: '/react_logo.png', size: '1.6rem'},
               {name: 'Tailwind', image: '/tailwind_logo.png', size: '1.6rem'},
               {name: 'NextJS', image: '/nextjs_logo.png', size: '1.6rem'},
-              {name: 'Figma', image: '/figma_logo.png', size: '1.6rem'},
               {name: 'TypeScript', image: '/typescript_logo.png', size: '1.6rem'}, 
+              {name: 'Headless UI', image: '/headlessui_logo.png', size: '1.6rem'}, 
             ]}
         />
     </>

@@ -35,7 +35,9 @@ export default {
         'google-red': '#EA4235',
         'google-blue': '#4286F5',
         'contact-pink': '#D779AB',
-        'diskus-pink': '#D9B2FF'
+        'diskus-pink': '#D9B2FF',
+        'showcar-light': '#E79748',
+        'showcar-dark': '#B6611D'
       }
     },
   },
