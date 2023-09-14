@@ -714,6 +714,22 @@ const ProjectComponent = ({
                             </h1>
                         </Link>
                     </motion.div>
+
+                    <motion.div 
+                        initial = {{opacity: 0, x: '300px'}}
+                        viewport = {{once: true}}
+                        whileInView = {{opacity: 1, x: '0px'}} 
+                        transition = {{delay: Math.random() * .30, duration: animationDuration, ease: 'easeOut'}}
+                        className = "h-full w-full">
+                        <Link 
+                            to = "/projects"
+                            className = {`h-[88px] hover:bg-black bg-gray-500 mt-5 transition-all duration-200 shadow-lg w-full rounded-3xl flex justify-center gap-4 items-center relative cursor-pointer p-3`}
+                        >
+                            <h1 className = " text-white font-[Poppins] font-bold text-xl max-w-[13rem] sm:max-w-[17rem]">
+                                Back to Projects
+                            </h1>
+                        </Link>
+                    </motion.div>
                 </section>
 
             </motion.div>
