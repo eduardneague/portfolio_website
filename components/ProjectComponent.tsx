@@ -628,7 +628,7 @@ const ProjectComponent = ({
                         transition = {{delay: Math.random() * .30, duration: animationDuration, ease: 'easeOut'}}
                         className = {`text-2xl md:text-3xl font-bold pb-4 ${titleColor}`}
                     >
-                        Funcionality
+                        Functionality
                     </motion.h1>
 
                     <motion.p 
