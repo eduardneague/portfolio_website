@@ -3,7 +3,7 @@ import '../src/css_files/App.css'
 
 import Preloader from '../components/Preloader'
 
-import Home, {homeWeatherLoader} from '../pages/Home'
+import Home, { homeWeatherLoader } from '../pages/Home'
 import Projects from '../pages/Projects'
 import Contact from '../pages/Contact'
 import RootLayout from '../pages/RootLayout'
@@ -13,7 +13,7 @@ import ContactFail from '../pages/ContactFail'
 import ProjectPage from '../pages/ProjectPage'
 
 import ScrollToTop from '../components/ScrollToTop'
-
+//d
 import {
   Route,
   Routes,
